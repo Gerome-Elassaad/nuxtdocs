@@ -1,6 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui-pro', '@nuxt/content', 'nuxt-og-image', 'nuxt-llms', '@nuxtjs/seo'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@nuxt/ui-pro',
+    '@nuxt/content',
+    'nuxt-og-image',
+    'nuxt-llms',
+    '@nuxtjs/seo',
+    '@nuxtjs/sitemap'
+  ],
 
   devtools: {
     enabled: true
@@ -18,6 +28,7 @@ export default defineNuxtConfig({
     }
   },
 
+  // Redirect the root path to the getting started page
   routeRules: {
     '/': { redirect: '/getting-started' }
   },
@@ -30,10 +41,22 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: [
-        '/'
-      ],
+      routes: ['/'],
       crawlLinks: true
+    }
+  },
+
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id: string) {
+            if (id.includes('node_modules')) {
+              return 'vendor'
+            }
+          }
+        }
+      }
     }
   },
 
@@ -55,7 +78,7 @@ export default defineNuxtConfig({
     title: 'Codinit.dev',
     description: 'Find out how to use CodinIT with our comprehensive documentation and guides for developers & users.',
     full: {
-      title: '',
+      title: 'Codinit.dev Documentation',
       description: 'The complete documentation for CodinIT, covering all features and functionalities.'
     },
     sections: [
