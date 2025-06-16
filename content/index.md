@@ -112,7 +112,7 @@ The Complete AI App Development Platform
 
   :::u-page-feature
   ---
-  icon: i-lucide-git-branch
+  icon: simple-icons--github
   ---
   #title
   Version Control

@@ -25,6 +25,10 @@ export default defineNuxtConfig({
     }
   },
 
+  routeRules: {
+    '/': { redirect: '/getting-started' }
+  },
+
   future: {
     compatibilityVersion: 4
   },
@@ -54,12 +58,12 @@ export default defineNuxtConfig({
   },
 
   llms: {
-    domain: 'https://docs-template.nuxt.dev/',
-    title: 'Nuxt Docs Template',
-    description: 'A template for building documentation with Nuxt UI Pro and Nuxt Content.',
+    domain: 'https://docs.codinit.dev/',
+    title: 'Codinit.dev',
+    description: 'Find out how to use CodinIT with our comprehensive documentation and guides for developers & users.',
     full: {
-      title: 'Nuxt Docs Template - Full Documentation',
-      description: 'This is the full documentation for the Nuxt Docs Template.'
+      title: '',
+      description: 'The complete documentation for CodinIT, covering all features and functionalities.'
     },
     sections: [
       {

@@ -2,8 +2,6 @@
   <NuxtImg
     :key="mounted ? $colorMode.value : 'initial'"
     :src="logoSrcToRender"
-    width="300"
-    height="300"
     alt="Logo"
   />
 </template>

@@ -14,7 +14,7 @@ export default defineAppConfig({
     }
   },
   seo: {
-    siteName: 'Nuxt Docs Template'
+    siteName: 'CodinIT.dev'
   },
   header: {
     title: '',
