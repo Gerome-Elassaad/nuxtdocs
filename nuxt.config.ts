@@ -28,11 +28,6 @@ export default defineNuxtConfig({
     }
   },
 
-  // Redirect the root path to the getting started page
-  routeRules: {
-    '/': { redirect: '/getting-started' }
-  },
-
   future: {
     compatibilityVersion: 4
   },
