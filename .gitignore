@@ -27,3 +27,6 @@ logs
 .history
 
 .vercel
+
+# Local Netlify folder
+.netlify

@@ -1,0 +1,20 @@
+# Netlify configuration file
+# See https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Command to build the site
+  command = "pnpm generate"
+  # Directory to publish
+  publish = ".output/public"
+
+[build.environment]
+  # Set the Node.js version
+  NODE_VERSION = "20"
+  # Set the pnpm version
+  PNPM_VERSION = "10.12.1"
+
+# Redirects and rewrites
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

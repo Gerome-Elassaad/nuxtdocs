@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import type { ContentNavigationItem } from '@nuxt/content'
+import { kebabCase } from 'scule'
+import { addPrerenderPath } from '../utils/prerender'
 import { findPageHeadline } from '#ui-pro/utils/content'
 
 definePageMeta({
@@ -7,19 +9,24 @@ definePageMeta({
 })
 
 const route = useRoute()
-const { toc } = useAppConfig()
+const appConfig = useAppConfig()
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
-const { data: page } = await useAsyncData(route.path, () => queryCollection('docs').path(route.path).first())
+const [{ data: page }, { data: surround }] = await Promise.all([
+  useAsyncData(kebabCase(route.path), () => queryCollection('docs').path(route.path).first()),
+  useAsyncData(`${kebabCase(route.path)}-surround`, () => {
+    return queryCollectionItemSurroundings('docs', route.path, {
+      fields: ['description']
+    })
+  })
+])
+
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings('docs', route.path, {
-    fields: ['description']
-  })
-})
+// Add the page path to the prerender list
+addPrerenderPath(`/raw${route.path}.md`)
 
 const title = page.value.seo?.title || page.value.title
 const description = page.value.seo?.description || page.value.description
@@ -32,23 +39,12 @@ useSeoMeta({
 })
 
 const headline = computed(() => findPageHeadline(navigation?.value, page.value))
-
 defineOgImageComponent('Docs', {
   headline: headline.value
 })
 
-const links = computed(() => {
-  const links = []
-  if (toc?.bottom?.edit) {
-    links.push({
-      icon: 'i-lucide-external-link',
-      label: 'Edit this page',
-      to: `${toc.bottom.edit}/${page?.value?.stem}.${page?.value?.extension}`,
-      target: '_blank'
-    })
-  }
-
-  return [...links, ...(toc?.bottom?.links || [])].filter(Boolean)
+const editLink = computed(() => {
+  return appConfig.github && `${appConfig.github.url}/edit/${appConfig.github.branch}/content/${page.value?.stem}.${page.value?.extension}`
 })
 </script>
 
@@ -59,7 +55,14 @@ const links = computed(() => {
       :description="page.description"
       :links="page.links"
       :headline="headline"
-    />
+      :ui="{
+        wrapper: 'flex-row items-center flex-wrap justify-between'
+      }"
+    >
+      <template #links>
+        <DocsPageHeaderLinks />
+      </template>
+    </UPageHeader>
 
     <UPageBody>
       <ContentRenderer
@@ -67,8 +70,34 @@ const links = computed(() => {
         :value="page"
       />
 
-      <USeparator v-if="surround?.length" />
-
+      <USeparator>
+        <div
+          v-if="editLink"
+          class="flex items-center gap-2 text-sm text-muted"
+        >
+          <UButton
+            variant="link"
+            color="neutral"
+            :to="editLink"
+            target="_blank"
+            icon="i-lucide-pen"
+            :ui="{ leadingIcon: 'size-4' }"
+          >
+            Edit this page
+          </UButton>
+          or
+          <UButton
+            variant="link"
+            color="neutral"
+            :to="`${appConfig.github.url}/issues/new/choose`"
+            target="_blank"
+            icon="i-lucide-alert-circle"
+            :ui="{ leadingIcon: 'size-4' }"
+          >
+            Report an issue
+          </UButton>
+        </div>
+      </USeparator>
       <UContentSurround :surround="surround" />
     </UPageBody>
 
@@ -77,27 +106,11 @@ const links = computed(() => {
       #right
     >
       <UContentToc
-        :title="toc?.title"
+        :title="appConfig.toc?.title || 'Table of Contents'"
         :links="page.body?.toc?.links"
       >
-        <template
-          v-if="toc?.bottom"
-          #bottom
-        >
-          <div
-            class="hidden lg:block space-y-6"
-            :class="{ '!mt-6': page.body?.toc?.links?.length }"
-          >
-            <USeparator
-              v-if="page.body?.toc?.links?.length"
-              type="dashed"
-            />
-
-            <UPageLinks
-              :title="toc.bottom.title"
-              :links="links"
-            />
-          </div>
+        <template #bottom>
+          <DocsAsideRightBottom />
         </template>
       </UContentToc>
     </template>

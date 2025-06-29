@@ -4,24 +4,35 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
+// Reconsider it once this is implemented: https://github.com/nuxt/content/issues/3419
+const prose = page.value.meta.prose
 const title = page.value.seo?.title || page.value.title
 const description = page.value.seo?.description || page.value.description
 
 useSeoMeta({
-  titleTemplate: '',
   title,
-  ogTitle: title,
   description,
-  ogDescription: description,
-  ogImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2RvY3MtdGVtcGxhdGUubnV4dC5kZXYiLCJpYXQiOjE3Mzk0NjM0MTd9.ltVAqPgKG38O01X1zl6MXfrJc55nf9OewXNFjpZ_2JY.jpg?theme=light',
-  twitterImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2RvY3MtdGVtcGxhdGUubnV4dC5kZXYiLCJpYXQiOjE3Mzk0NjM0MTd9.ltVAqPgKG38O01X1zl6MXfrJc55nf9OewXNFjpZ_2JY.jpg?theme=light'
+  ogTitle: title,
+  ogDescription: description
 })
+
+if (page.value?.seo?.ogImage) {
+  useSeoMeta({
+    ogImage: page.value.seo.ogImage,
+    twitterImage: page.value.seo.ogImage
+  })
+} else {
+  defineOgImageComponent('Landing', {
+    title,
+    description
+  })
+}
 </script>
 
 <template>
   <ContentRenderer
     v-if="page"
     :value="page"
-    :prose="false"
+    :prose="prose || false"
   />
 </template>

@@ -1,295 +1,257 @@
 ---
 seo:
-  title: Docs - CodinIT.dev
-  description: Learn how to build, deploy, and edit full-stack applications with CodinIT.dev. Open-source AI app builder powered by e2b.dev sandboxes.
+  title: Docs
+  description: Create full-stack web applications using natural language. No coding expertise required. Deploy instantly with custom domains using CodinIT.dev.
 ---
 
 ::u-page-hero
----
-orientation: horizontal
----
-  :::prose-pre
-  ---
-  code: npx create-codinit-app my-app
-  filename: Terminal
-  ---
-  ```bash
-  npx create-codinit-app my-app
-  ```
-  :::
-
 #title
-CodinIT.dev - Open Source AI App Builder
+Build Apps Fast with AI-Powered Development
 
 #description
-The open-source AI-powered app builder that lets you create, deploy, and edit full-stack applications using natural language. Powered by e2b.dev sandboxes for secure code execution.
+Create full-stack web applications using natural language. No coding expertise required.
+
+Turn your ideas into deployed applications from one browser tab.
 
 #links
   :::u-button
   ---
+  color: neutral
   size: xl
   to: /getting-started
   trailing-icon: i-lucide-arrow-right
   ---
-  Get Started
+  Get started
   :::
 
   :::u-button
   ---
   color: neutral
-  icon: i-simple-icons-github
+  icon: simple-icons-github
   size: xl
-  target: _blank
-  to: https://github.com/Gerome-Elassaad/CodingIT
-  variant: subtle
+  to: https://github.com/Gerome-Elassaad/docs
+  variant: outline
   ---
-  View on GitHub
+  Star on GitHub
   :::
 
+#headline
   :::u-button
   ---
-  color: purple
-  icon: i-lucide-rocket
-  size: xl
-  target: _blank
+  size: sm
   to: https://codinit.dev
-  variant: subtle
+  variant: outline
   ---
-  Try CodinIT Platform
+  Try CodinIT.dev Free Today →
   :::
 ::
 
 ::u-page-section
-#title
-The Complete AI App Development Platform
-
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: lg
-  target: _blank
-  to: https://e2b.dev
-  trailingIcon: i-lucide-external-link
-  variant: subtle
-  ---
-  Powered by e2b.dev Sandboxes
-  :::
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-lucide-brain
-  ---
-  #title
-  AI-Powered Development
-
-  #description
-  Build applications using natural language prompts with support for multiple AI models including GPT-4, Claude, Gemini, and more.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-box
-  ---
-  #title
-  Secure Sandboxes
-
-  #description
-  Powered by e2b.dev sandboxes for secure code execution and deployment in isolated environments.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-code
-  ---
-  #title
-  Full-Stack Capable
-
-  #description
-  Generate complete applications with frontend, backend, databases, and deployment configurations.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: simple-icons--github
-  ---
-  #title
-  Version Control
-
-  #description
-  Built-in Git integration with GitHub support for collaborative development and version tracking.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-zap
-  ---
-  #title
-  Real-Time Editing
-
-  #description
-  Edit your applications in real-time with AI assistance and instant preview capabilities.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-globe
-  ---
-  #title
-  One-Click Deploy
-
-  #description
-  Deploy your applications instantly with custom domains and production-ready hosting.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-users
-  ---
-  #title
-  Team Collaboration
-
-  #description
-  Work together with your team in shared workspaces with real-time collaboration features.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-open-book
-  ---
-  #title
-  Open Source
-
-  #description
-  Fully open-source platform that you can self-host, customize, and contribute to.
-  :::
-::
-
-::u-page-section
-#title
-Supported Technologies & Integrations
-
-#description
-CodinIT.dev supports a wide range of technologies and provides seamless integrations with popular development tools and services.
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-simple-icons-react
-  title: Frontend Frameworks
-  ---
-  React, Vue.js, Svelte, Angular, and more with full TypeScript support and modern tooling.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-simple-icons-nodedotjs
-  title: Backend Technologies
-  ---
-  Node.js, Python, Go, Rust, and other runtimes with API generation and database integration.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-simple-icons-postgresql
-  title: Databases
-  ---
-  PostgreSQL, MySQL, MongoDB, Redis, and more with automatic schema generation and migrations.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-simple-icons-docker
-  title: DevOps & Deployment
-  ---
-  Docker containers, Kubernetes, Vercel, Netlify, and custom deployment configurations.
-  :::
-::
-
-::u-page-section
-#title
-AI Models & Providers
-
-#description
-Choose from multiple AI providers and models to power your development experience.
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-lucide-brain
-  to: /models/anthropic
-  ---
-  #title
-  Anthropic Claude
-
-  #description
-  Claude 3.5 Sonnet and other models for advanced reasoning and code generation.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-bot
-  to: /models/openai
-  ---
-  #title
-  OpenAI GPT
-
-  #description
-  GPT-4, GPT-4 Turbo, and o1 models for intelligent app development.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-sparkles
-  to: /models/gemini
-  ---
-  #title
-  Google Gemini
-
-  #description
-  Gemini Pro and Flash models for fast and efficient development.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-server
-  to: /models/ollama
-  ---
-  #title
-  Local Models
-
-  #description
-  Run models locally with Ollama for privacy and offline development.
-  :::
-::
-
-::u-page-section
-  :::u-page-c-t-a
-  ---
-  links:
-    - label: Start Building
-      to: https://codinit.dev
-      target: _blank
-      icon: i-lucide-rocket
-      color: primary
-      size: lg
-    - label: Documentation
-      to: /getting-started
-      trailingIcon: i-lucide-book-open
-      color: neutral
-      variant: subtle
-      size: lg
-    - label: GitHub Repository
-      to: https://github.com/Gerome-Elassaad/CodingIT
-      target: _blank
-      icon: i-simple-icons-github
-      color: neutral
-      variant: subtle
-      size: lg
-  description: Ready to build your next application with AI? Start with CodinIT.dev today and experience the future of app development.
-  title: Build Smarter, Deploy Faster
-  variant: subtle
-  ---
+  :::u-page-grid
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: group col-span-2 lg:col-span-1
+    target: _blank
+    to: https://codinit.dev
+    ---
+      :::::floating-nuxt
+      :::::
+    
+    #title
+    Powered by [AI Technology]{.text-primary}
+    
+    #description
+    Build complete applications using natural language descriptions. Our AI handles the coding, deployment, and infrastructure so you can focus on your vision.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    to: https://codinit.dev/#pricing
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 627
+      width: 955
+      alt: Beautiful applications built with AI
+      class: w-full h-80 object-cover rounded-lg
+      dark: /landing/dark/templates-ui-pro.webp
+      light: /landing/light/templates-ui-pro.webp
+      ---
+      :::::
+    
+    #title
+    Professional [App Templates]{.text-primary}
+    
+    #description
+    Start with beautifully designed templates or create from scratch. Every application includes authentication, databases, and deployment configuration out of the box.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::tabs
+        ::::::tabs-item{.mt-5 icon="i-lucide-eye" label="Preview"}
+          :::::::div{.flex.flex-col.gap-4}
+            ::::::::note{.my-0}
+            Your app is ready for deployment with custom domains.
+            ::::::::
+          
+            ::::::::tip{.my-0}
+            Connect to GitHub for version control and collaboration.
+            ::::::::
+          
+            ::::::::warning{.my-0}
+            Database changes in production require careful planning.
+            ::::::::
+          
+            ::::::::caution{.my-0}
+            API keys should be stored securely in environment variables.
+            ::::::::
+          :::::::
+        ::::::
+      
+        ::::::tabs-item
+        ---
+        class: mt-5 mb-2 text-xs overflow-x-auto
+        icon: i-lucide-code
+        label: Prompt
+        ---
+        ```text
+        Create a dashboard app with user authentication, 
+        monthly sales chart, and customer management. 
+        Include a dark mode toggle and mobile responsive design.
+        ```
+        ::::::
+      :::::
+    
+    #title
+    Natural Language to [Full Applications]{.text-primary}
+    
+    #description
+    Simply describe what you want to build in plain English. Our AI understands context, generates code, sets up databases, and handles deployment automatically.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 md:col-span-1
+    target: _blank
+    ---
+      :::::div{.bg-elevated.rounded-lg.p-3.overflow-x-auto}
+      ```js [app.config.js]
+      export default {
+        name: 'My Dashboard App',
+        database: 'supabase',
+        authentication: 'enabled',
+        deployment: {
+          domain: 'my-app.codinit.dev',
+          ssl: true
+        },
+        features: [
+          'user-management',
+          'analytics',
+          'real-time-sync'
+        ]
+      }
+      ```
+      :::::
+    
+    #title
+    Configure with [Simple Settings]{.text-primary}
+    
+    #description
+    Customize your application settings, connect services, and manage deployments through an intuitive configuration interface.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 md:col-span-1 min-h-[450px]
+    target: _blank
+    ---
+      :::::color-mode-switch
+      :::::
+    
+    #title
+    [Dark Mode]{.text-primary} Support
+    
+    #description
+    Every application includes built-in dark mode support and responsive design across all devices.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 554
+      width: 859
+      alt: Built-in collaboration and project management"
+      class: rounded-lg
+      dark: /landing/dark/command-menu.png
+      format: webp
+      light: /landing/light/command-menu.png
+      loading: lazy
+      ---
+      :::::
+    
+    #title
+    Built-in [collaboration tools]{.text-primary}
+    
+    #description
+    Work with your team in real-time. Share projects, manage versions, and collaborate on applications without complex setup.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::browser-frame
+      :video{.rounded-md controls loop playsinline src="https://res.cloudinary.com/nuxt/video/upload/v1747230893/studio/wzt9zfmdvk7hgmdx3cnt.mp4"}
+      :::::
+    
+    #title
+    Visual [AI Editing]{.text-primary}
+    
+    #description
+    Edit your applications visually with AI assistance. Select components, describe changes, and watch your app evolve in real-time without touching code.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 lg:col-span-1
+    target: _blank
+    to: https://e2b.dev
+    ---
+      :::::div{.flex-1.flex.items-center.justify-center}
+        ::::::u-color-mode-image
+        ---
+        alt: Secure sandbox environment
+        class: w-[30%] lg:w-[70%] my-12 lg:my-0
+        dark: /landing/dark/nuxt-image.svg
+        light: /landing/light/nuxt-image.svg
+        ---
+        ::::::
+      :::::
+    
+    #title
+    [Secure Sandboxes]{.text-primary}
+    
+    #description
+    All code execution happens in secure, isolated environments powered by e2b.dev for maximum safety and reliability.
+    ::::
   :::
 ::

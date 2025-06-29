@@ -1,62 +1,62 @@
 export default defineAppConfig({
   ui: {
     colors: {
-      primary: 'blue',
-      neutral: 'slate'
+      primary: 'emerald',
+      neutral: 'zinc'
     }
   },
+  socials: {
+    x: 'https://x.com/codinit_dev',
+    discord: 'https://discord.com/'
+  },
   uiPro: {
-    footer: {
+    contentNavigation: {
       slots: {
-        root: 'border-t border-default',
-        left: 'text-sm text-muted'
+        linkLeadingIcon: 'size-4 mr-1',
+        listWithChildren: 'border-(--ui-bg-elevated)',
+        linkTrailing: 'hidden'
+      },
+      variants: {
+        active: {
+          false: {
+            link: 'text-toned hover:after:bg-accented'
+          }
+        }
+      }
+    },
+    pageLinks: {
+      slots: {
+        linkLeadingIcon: 'size-4',
+        linkLabelExternalIcon: 'size-2.5'
+      }
+    },
+    pageHero: {
+      slots: {
+        title: 'font-semibold sm:text-6xl',
+        container: '!pb-0'
+      }
+    },
+    pageCard: {
+      slots: {
+        container: 'lg:flex min-w-0',
+        wrapper: 'flex-none'
       }
     }
   },
-  seo: {
-    siteName: 'CodinIT.dev'
-  },
-  header: {
-    title: '',
-    to: '/',
-    logo: {
-      alt: '',
-      light: '',
-      dark: ''
-    },
-    search: true,
-    colorMode: true,
-    links: [{
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/codinit-dev/docs',
-      'target': '_blank',
-      'aria-label': 'GitHub'
-    }]
-  },
-  footer: {
-    credits: `Copyright © ${new Date().getFullYear()}`,
-    colorMode: false,
-    links: [{
-      'icon': 'i-simple-icons-x',
-      'to': 'https://x.com/codinit_dev',
-      'target': '_blank',
-      'aria-label': 'CodinIT.dev on X'
-    }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/codinit-dev',
-      'target': '_blank',
-      'aria-label': 'CodinIT.dev on GitHub'
-    }]
-  },
   toc: {
-    title: 'Table of Contents',
+    title: 'On this page',
     bottom: {
       title: 'Community',
-      edit: 'https://github.com/codinit-dev/docs',
       links: [{
-        icon: 'i-lucide-star',
-        label: 'Star on GitHub',
-        to: 'https://github.com/codinit-dev/docs',
+        icon: 'i-lucide-book-open',
+        label: 'Read our blog',
+        to: 'https://codinit.dev/blog',
+        target: '_blank'
+      },
+      {
+        icon: 'i-lucide-credit-card',
+        label: 'Go Pro',
+        to: 'https://codinit.dev/#pricing',
         target: '_blank'
       }]
     }

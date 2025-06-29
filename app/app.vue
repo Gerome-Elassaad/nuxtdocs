@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { seo } = useAppConfig()
+const site = useSiteConfig()
 
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'))
 const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('docs'), {
@@ -19,8 +20,10 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: `%s - ${seo?.siteName}`,
-  ogSiteName: seo?.siteName,
+  titleTemplate: seo?.titleTemplate || '%s - Docs',
+  title: seo.title,
+  description: seo.description,
+  ogSiteName: site.name,
   twitterCard: 'summary_large_image'
 })
 
@@ -29,7 +32,7 @@ provide('navigation', navigation)
 
 <template>
   <UApp>
-    <NuxtLoadingIndicator />
+    <NuxtLoadingIndicator color="var(--ui-primary)" />
 
     <AppHeader />
 

@@ -1,96 +1,57 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { extendViteConfig } from '@nuxt/kit'
+
+// Flag enabled when developing docs theme
+const dev = !!process.env.NUXT_DOCS_DEV
 
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/image',
     '@nuxt/ui-pro',
     '@nuxt/content',
+    '@nuxt/image',
+    '@nuxtjs/robots',
     'nuxt-og-image',
     'nuxt-llms',
-    '@nuxtjs/seo',
-    '@nuxtjs/sitemap'
-  ],
-
-  devtools: {
-    enabled: true
-  },
-
-  css: ['~/assets/css/main.css'],
-
-  content: {
-    build: {
-      markdown: {
-        toc: {
-          searchDepth: 1
-        }
-      }
+    () => {
+      // Update @nuxt/content optimizeDeps options
+      extendViteConfig((config) => {
+        config.optimizeDeps ||= {}
+        config.optimizeDeps.include ||= []
+        config.optimizeDeps.include.push('@nuxt/content > slugify')
+        config.optimizeDeps.include = config.optimizeDeps.include
+          .map(id => id.replace(/^@nuxt\/content > /, 'docus > @nuxt/content > '))
+      })
     }
+  ],
+  devtools: {
+    enabled: dev
   },
+  css: ['../app/assets/css/main.css'],
 
+  site: {
+    url: 'https://docs.codinit.dev'
+  },
   future: {
     compatibilityVersion: 4
   },
-
-  compatibilityDate: '2024-07-11',
-
   nitro: {
     prerender: {
       routes: ['/'],
-      crawlLinks: true
+      crawlLinks: true,
+      failOnError: false,
+      autoSubfolderIndex: false,
+      ignore: ['/_ipx/**']
     }
   },
-
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          manualChunks(id: string) {
-            if (id.includes('node_modules')) {
-              return 'vendor'
-            }
-          }
-        }
-      }
-    }
-  },
-
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  },
-
   icon: {
     provider: 'iconify'
   },
-
   llms: {
-    domain: 'https://docs.codinit.dev/',
-    title: 'Codinit.dev',
-    description: 'Find out how to use CodinIT with our comprehensive documentation and guides for developers & users.',
+    domain: 'https://docs.codinit.dev',
+    title: 'CodinIT',
+    description: 'Learn how to build, deploy, and edit full-stack applications with CodinIT.dev. Open-source AI app builder powered by e2b.dev sandboxes.',
     full: {
-      title: 'Codinit.dev Documentation',
-      description: 'The complete documentation for CodinIT, covering all features and functionalities.'
-    },
-    sections: [
-      {
-        title: 'Getting Started',
-        contentCollection: 'docs',
-        contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/getting-started%' }
-        ]
-      },
-      {
-        title: 'Essentials',
-        contentCollection: 'docs',
-        contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/essentials%' }
-        ]
-      }
-    ]
+      title: 'CodinIT',
+      description: 'Learn how to build, deploy, and edit full-stack applications with CodinIT.dev. Open-source AI app builder powered by e2b.dev sandboxes.'
+    }
   }
 })
