@@ -1,29 +1,71 @@
-# CodinIT
+# Docs
 
-> Learn how to build, deploy, and edit full-stack applications with CodinIT.dev. Open-source AI app builder powered by e2b.dev sandboxes.
+> Find out how to use CodinIT with our comprehensive documentation and guides for developers & users.
 
 ## Documentation Sets
 
-- [CodinIT](https://docs.codinit.dev/llms-full.txt): Learn how to build, deploy, and edit full-stack applications with CodinIT.dev. Open-source AI app builder powered by e2b.dev sandboxes.
+- [Codinit.dev Documentation](https://docs.codinit.dev//llms-full.txt): The complete documentation for CodinIT, covering all features and functionalities.
 
-## Landing
-
-- [Docs](https://docs.codinit.dev): Create full-stack web applications using natural language. No coding expertise required. Deploy instantly with custom domains using CodinIT.dev.
-
-## Docs
+## Getting Started
 
 - [Introduction](https://docs.codinit.dev/getting-started): Build real web apps fast using natural language with CodinIT - an AI-powered platform for creating full-stack applications
 - [Quickstart](https://docs.codinit.dev/getting-started/quickstart): Get up and running with CodinIT in minutes. Learn the essential workflow for building, editing, and deploying your first application.
 - [Teams](https://docs.codinit.dev/getting-started/teams): Collaborate on your app in real time with teammates using CodinIT's powerful workspace features
 - [Developer Docs](https://docs.codinit.dev/getting-started/developer-docs): Framework-specific prompting strategies for Next.js, Python, Gradio, and Streamlit development. Accelerate your development with proven AI prompts.
-- [Github](https://docs.codinit.dev/integrations/github)
-- [Anthropic](https://docs.codinit.dev/models/anthropic): Learn how to configure and use Anthropic Claude models with CodinIT. Covers API key setup, model selection, and advanced features like prompt caching.
-- [DeepSeek](https://docs.codinit.dev/models/deepseek): Learn how to configure and use DeepSeek models like deepseek-chat and deepseek-reasoner with CodinIT.
-- [Gemini](https://docs.codinit.dev/models/gemini): Learn how to connect Google Gemini AI models to your CodinIT projects. Get access to powerful AI capabilities with simple setup and configuration.
+
+## Integrations
+
+- [Introduction](https://docs.codinit.dev/getting-started): Build real web apps fast using natural language with CodinIT - an AI-powered platform for creating full-stack applications
+- [Quickstart](https://docs.codinit.dev/getting-started/quickstart): Get up and running with CodinIT in minutes. Learn the essential workflow for building, editing, and deploying your first application.
+- [Teams](https://docs.codinit.dev/getting-started/teams): Collaborate on your app in real time with teammates using CodinIT's powerful workspace features
+- [Developer Docs](https://docs.codinit.dev/getting-started/developer-docs): Framework-specific prompting strategies for Next.js, Python, Gradio, and Streamlit development. Accelerate your development with proven AI prompts.
+- [GitHub](https://docs.codinit.dev/integrations/github): Import existing GitHub repositories into CodinIT projects to transform your existing codebase into an AI-powered development workflow.
+- [Plugins](https://docs.codinit.dev/integrations/plugins): Explore all available integrations to enhance your CodinIT development experience. Connect with popular tools, services, and platforms to build production-ready applications.
+- [Anthropic](https://docs.codinit.dev/models/anthropic): Complete guide to integrating Anthropic Claude models with CodinIT.dev for AI-powered development.
+- [DeepSeek](https://docs.codinit.dev/models/deepseek): Complete guide to integrating DeepSeek AI models with CodinIT.dev for cost-effective, high-performance app development.
+- [Google Gemini](https://docs.codinit.dev/models/gemini): Complete guide to integrating Google Gemini AI models with CodinIT.dev for intelligent app development.
 - [xAI Groq](https://docs.codinit.dev/models/groq): Complete guide to integrating Groq models with CodinIT.dev for intelligent app development with real-time capabilities.
 - [Mistral](https://docs.codinit.dev/models/mistral): Complete guide to integrating Mistral AI models with CodinIT.dev for precise code generation and multilingual development.
 - [Ollama](https://docs.codinit.dev/models/ollama): Complete guide to integrating Ollama local AI models with CodinIT.dev for privacy-first development.
 - [OpenAI](https://docs.codinit.dev/models/openai): Complete guide to integrating OpenAI GPT models with CodinIT.dev for AI-powered application development.
 - [Vertex AI](https://docs.codinit.dev/models/gcp-vertex-ai): Complete guide to integrating Google Cloud Vertex AI with CodinIT.dev for enterprise-grade AI development.
-- [TogetherAI](https://docs.codinit.dev/providers/togetherai): Learn how to connect Together AI to your CodinIT projects. Get access to the best open-source AI models with transparent pricing and fast performance.
-- [Fireworks AI](https://docs.codinit.dev/providers/fireworks): Configure Fireworks AI with CodinIT to access ultra-fast inference of leading open-source AI models including Llama 3.1, Mixtral, Code Llama, and more.
+- [Together AI](https://docs.codinit.dev/providers/togetherai): Learn how to connect Together AI to your CodinIT projects to access open-source AI models with transparent pricing.
+- [Fireworks AI](https://docs.codinit.dev/providers/fireworks): Learn how to connect Fireworks AI to your CodinIT projects for ultra-fast inference of open-source models.
+
+## Models
+
+- [Introduction](https://docs.codinit.dev/getting-started): Build real web apps fast using natural language with CodinIT - an AI-powered platform for creating full-stack applications
+- [Quickstart](https://docs.codinit.dev/getting-started/quickstart): Get up and running with CodinIT in minutes. Learn the essential workflow for building, editing, and deploying your first application.
+- [Teams](https://docs.codinit.dev/getting-started/teams): Collaborate on your app in real time with teammates using CodinIT's powerful workspace features
+- [Developer Docs](https://docs.codinit.dev/getting-started/developer-docs): Framework-specific prompting strategies for Next.js, Python, Gradio, and Streamlit development. Accelerate your development with proven AI prompts.
+- [GitHub](https://docs.codinit.dev/integrations/github): Import existing GitHub repositories into CodinIT projects to transform your existing codebase into an AI-powered development workflow.
+- [Plugins](https://docs.codinit.dev/integrations/plugins): Explore all available integrations to enhance your CodinIT development experience. Connect with popular tools, services, and platforms to build production-ready applications.
+- [Anthropic](https://docs.codinit.dev/models/anthropic): Complete guide to integrating Anthropic Claude models with CodinIT.dev for AI-powered development.
+- [DeepSeek](https://docs.codinit.dev/models/deepseek): Complete guide to integrating DeepSeek AI models with CodinIT.dev for cost-effective, high-performance app development.
+- [Google Gemini](https://docs.codinit.dev/models/gemini): Complete guide to integrating Google Gemini AI models with CodinIT.dev for intelligent app development.
+- [xAI Groq](https://docs.codinit.dev/models/groq): Complete guide to integrating Groq models with CodinIT.dev for intelligent app development with real-time capabilities.
+- [Mistral](https://docs.codinit.dev/models/mistral): Complete guide to integrating Mistral AI models with CodinIT.dev for precise code generation and multilingual development.
+- [Ollama](https://docs.codinit.dev/models/ollama): Complete guide to integrating Ollama local AI models with CodinIT.dev for privacy-first development.
+- [OpenAI](https://docs.codinit.dev/models/openai): Complete guide to integrating OpenAI GPT models with CodinIT.dev for AI-powered application development.
+- [Vertex AI](https://docs.codinit.dev/models/gcp-vertex-ai): Complete guide to integrating Google Cloud Vertex AI with CodinIT.dev for enterprise-grade AI development.
+- [Together AI](https://docs.codinit.dev/providers/togetherai): Learn how to connect Together AI to your CodinIT projects to access open-source AI models with transparent pricing.
+- [Fireworks AI](https://docs.codinit.dev/providers/fireworks): Learn how to connect Fireworks AI to your CodinIT projects for ultra-fast inference of open-source models.
+
+## Providers
+
+- [Introduction](https://docs.codinit.dev/getting-started): Build real web apps fast using natural language with CodinIT - an AI-powered platform for creating full-stack applications
+- [Quickstart](https://docs.codinit.dev/getting-started/quickstart): Get up and running with CodinIT in minutes. Learn the essential workflow for building, editing, and deploying your first application.
+- [Teams](https://docs.codinit.dev/getting-started/teams): Collaborate on your app in real time with teammates using CodinIT's powerful workspace features
+- [Developer Docs](https://docs.codinit.dev/getting-started/developer-docs): Framework-specific prompting strategies for Next.js, Python, Gradio, and Streamlit development. Accelerate your development with proven AI prompts.
+- [GitHub](https://docs.codinit.dev/integrations/github): Import existing GitHub repositories into CodinIT projects to transform your existing codebase into an AI-powered development workflow.
+- [Plugins](https://docs.codinit.dev/integrations/plugins): Explore all available integrations to enhance your CodinIT development experience. Connect with popular tools, services, and platforms to build production-ready applications.
+- [Anthropic](https://docs.codinit.dev/models/anthropic): Complete guide to integrating Anthropic Claude models with CodinIT.dev for AI-powered development.
+- [DeepSeek](https://docs.codinit.dev/models/deepseek): Complete guide to integrating DeepSeek AI models with CodinIT.dev for cost-effective, high-performance app development.
+- [Google Gemini](https://docs.codinit.dev/models/gemini): Complete guide to integrating Google Gemini AI models with CodinIT.dev for intelligent app development.
+- [xAI Groq](https://docs.codinit.dev/models/groq): Complete guide to integrating Groq models with CodinIT.dev for intelligent app development with real-time capabilities.
+- [Mistral](https://docs.codinit.dev/models/mistral): Complete guide to integrating Mistral AI models with CodinIT.dev for precise code generation and multilingual development.
+- [Ollama](https://docs.codinit.dev/models/ollama): Complete guide to integrating Ollama local AI models with CodinIT.dev for privacy-first development.
+- [OpenAI](https://docs.codinit.dev/models/openai): Complete guide to integrating OpenAI GPT models with CodinIT.dev for AI-powered application development.
+- [Vertex AI](https://docs.codinit.dev/models/gcp-vertex-ai): Complete guide to integrating Google Cloud Vertex AI with CodinIT.dev for enterprise-grade AI development.
+- [Together AI](https://docs.codinit.dev/providers/togetherai): Learn how to connect Together AI to your CodinIT projects to access open-source AI models with transparent pricing.
+- [Fireworks AI](https://docs.codinit.dev/providers/fireworks): Learn how to connect Fireworks AI to your CodinIT projects for ultra-fast inference of open-source models.
