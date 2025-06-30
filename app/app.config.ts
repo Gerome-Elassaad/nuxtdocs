@@ -1,95 +1,64 @@
 export default defineAppConfig({
   ui: {
     colors: {
-      primary: 'emerald',
-      neutral: 'zinc'
-    },
-
-    icons: {
-      search: 'i-material-symbols-feature-search-outline-sharp',
-      dark: 'Theme',
-      light: 'i-material-symbols-sunny-outline',
-      external: 'i-material-symbols-add-link-rounded',
-      chevron: 'i-material-symbols-chevron-right-rounded',
-      hash: 'i-material-symbols-anchor'
+      primary: 'blue',
+      neutral: 'slate'
     }
   },
-
-  socials: {
-    x: 'https://x.com/codinit_dev',
-    discord: 'https://discord.com/'
-  },
-
   uiPro: {
-    contentNavigation: {
+    footer: {
       slots: {
-        linkLeadingIcon: 'size-4 mr-1',
-        listWithChildren: 'border-(--ui-bg-elevated)',
-        linkTrailing: 'hidden'
-      },
-      variants: {
-        active: {
-          false: {
-            link: 'text-toned hover:after:bg-accented'
-          }
-        }
-      }
-    },
-    pageLinks: {
-      slots: {
-        linkLeadingIcon: 'size-4',
-        linkLabelExternalIcon: 'size-2.5'
-      }
-    },
-    pageHero: {
-      slots: {
-        title: 'font-semibold sm:text-6xl',
-        container: '!pb-0'
-      }
-    },
-    pageCard: {
-      slots: {
-        container: 'lg:flex min-w-0',
-        wrapper: 'flex-none'
+        root: 'border-t border-default',
+        left: 'text-sm text-muted'
       }
     }
   },
-
+  seo: {
+    siteName: 'CodinIT.dev'
+  },
+  header: {
+    title: '',
+    to: '/',
+    logo: {
+      alt: '',
+      light: '',
+      dark: ''
+    },
+    search: true,
+    colorMode: true,
+    links: [{
+      'icon': 'i-simple-icons-github',
+      'to': 'https://github.com/codinit-dev/docs',
+      'target': '_blank',
+      'aria-label': 'GitHub'
+    }]
+  },
+  footer: {
+    credits: `Copyright © ${new Date().getFullYear()}`,
+    colorMode: false,
+    links: [{
+      'icon': 'i-simple-icons-x',
+      'to': 'https://x.com/codinit_dev',
+      'target': '_blank',
+      'aria-label': 'CodinIT.dev on X'
+    }, {
+      'icon': 'i-simple-icons-github',
+      'to': 'https://github.com/codinit-dev',
+      'target': '_blank',
+      'aria-label': 'CodinIT.dev on GitHub'
+    }]
+  },
   toc: {
-    title: 'On this page',
+    title: 'Table of Contents',
     bottom: {
       title: 'Community',
+      edit: 'https://github.com/codinit-dev/docs',
       links: [{
-        icon: 'i-lucide-book-open',
-        label: 'Read our blog',
-        to: 'https://codinit.dev/blog',
-        target: '_blank'
-      },
-      {
-        icon: 'i-lucide-credit-card',
-        label: 'Go Pro',
-        to: 'https://codinit.dev/#pricing',
+        icon: 'i-lucide-star',
+        label: 'Star on GitHub',
+        to: 'https://github.com/codinit-dev/docs',
         target: '_blank'
       }]
     }
-  },
-
-  header: {
-    logo: {
-      light: '/landing/light/logo.png',
-      dark: '/landing/dark/logo-dark.pn',
-      alt: 'Logo-Codinit'
-    },
-
-    title: '/landing/light/logo.png'
-  },
-
-  github: {
-    url: 'https://github.com/Gerome-Elassaad/docs'
-  },
-
-  seo: {
-    title: 'Docs',
-    description: 'Learn how to build, deploy, and edit full-stack applications with CodinIT.dev. Open-source AI app builder powered by e2b.dev sandboxes.'
   }
 })
