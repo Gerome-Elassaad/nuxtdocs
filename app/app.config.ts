@@ -3,12 +3,23 @@ export default defineAppConfig({
     colors: {
       primary: 'emerald',
       neutral: 'zinc'
+    },
+
+    icons: {
+      search: 'i-material-symbols-feature-search-outline-sharp',
+      dark: 'Theme',
+      light: 'i-material-symbols-sunny-outline',
+      external: 'i-material-symbols-add-link-rounded',
+      chevron: 'i-material-symbols-chevron-right-rounded',
+      hash: 'i-material-symbols-anchor'
     }
   },
+
   socials: {
     x: 'https://x.com/codinit_dev',
     discord: 'https://discord.com/'
   },
+
   uiPro: {
     contentNavigation: {
       slots: {
@@ -43,6 +54,7 @@ export default defineAppConfig({
       }
     }
   },
+
   toc: {
     title: 'On this page',
     bottom: {
@@ -60,5 +72,19 @@ export default defineAppConfig({
         target: '_blank'
       }]
     }
+  },
+
+  header: {
+    logo: {
+      light: '/landing/light/logo.png',
+      dark: '/landing/dark/logo-dark.png',
+      alt: 'Logo-Codinit'
+    },
+
+    title: '/landing/light/logo.png'
+  },
+
+  github: {
+    url: 'https://github.com/Gerome-Elassaad/docs'
   }
 })
