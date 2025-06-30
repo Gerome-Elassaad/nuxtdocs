@@ -1,0 +1,4562 @@
+# Docs
+
+::u-page-hero
+#title
+Build Apps Fast with AI-Powered Development
+
+#description
+Create full-stack web applications using natural language. No coding expertise required.
+
+Turn your ideas into deployed applications from one browser tab.
+
+#links
+  :::u-button
+  ---
+  color: neutral
+  size: xl
+  to: https://docs.codinit.dev/getting-started
+  trailing-icon: i-lucide-arrow-right
+  ---
+  Get started
+  :::
+
+  :::u-button
+  ---
+  color: neutral
+  icon: simple-icons-github
+  size: xl
+  to: https://github.com/Gerome-Elassaad/docs
+  variant: outline
+  ---
+  Star on GitHub
+  :::
+
+#headline
+  :::u-button{size="sm" to="https://codinit.dev" variant="outline"}
+  Try CodinIT.dev Free Today →
+  :::
+::
+
+::u-page-section
+  :::u-page-grid
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: group col-span-2 lg:col-span-1
+    target: _blank
+    to: https://codinit.dev
+    ---
+      :::::floating-nuxt
+      :::::
+    
+    #title
+    Powered by [AI Technology]{.text-primary}
+    
+    #description
+    Build complete applications using natural language descriptions. Our AI handles the coding, deployment, and infrastructure so you can focus on your vision.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    to: https://codinit.dev/#pricing
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 627
+      width: 955
+      alt: Beautiful applications built with AI
+      class: w-full h-80 object-cover rounded-lg
+      dark: /landing/dark/templates-ui-pro.webp
+      light: /landing/light/templates-ui-pro.webp
+      ---
+      :::::
+    
+    #title
+    Professional [App Templates]{.text-primary}
+    
+    #description
+    Start with beautifully designed templates or create from scratch. Every application includes authentication, databases, and deployment configuration out of the box.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::tabs
+        ::::::tabs-item{.mt-5 icon="i-lucide-eye" label="Preview"}
+          :::::::div{.flex.flex-col.gap-4}
+            ::::::::note{.my-0}
+            Your app is ready for deployment with custom domains.
+            ::::::::
+          
+            ::::::::tip{.my-0}
+            Connect to GitHub for version control and collaboration.
+            ::::::::
+          
+            ::::::::warning{.my-0}
+            Database changes in production require careful planning.
+            ::::::::
+          
+            ::::::::caution{.my-0}
+            API keys should be stored securely in environment variables.
+            ::::::::
+          :::::::
+        ::::::
+      
+        ::::::tabs-item
+        ---
+        class: mt-5 mb-2 text-xs overflow-x-auto
+        icon: i-lucide-code
+        label: Prompt
+        ---
+        ```text [prompt.txt]
+        Create a dashboard app with user authentication, 
+        monthly sales chart, and customer management. 
+        Include a dark mode toggle and mobile responsive design.
+        ```
+        ::::::
+      :::::
+    
+    #title
+    Natural Language to [Full Applications]{.text-primary}
+    
+    #description
+    Simply describe what you want to build in plain English. Our AI understands context, generates code, sets up databases, and handles deployment automatically.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 md:col-span-1
+    target: _blank
+    ---
+      :::::div{.bg-elevated.rounded-lg.p-3.overflow-x-auto}
+      ```js [app.config.js]
+      export default {
+        name: 'My Dashboard App',
+        database: 'supabase',
+        authentication: 'enabled',
+        deployment: {
+          domain: 'my-app.codinit.dev',
+          ssl: true
+        },
+        features: [
+          'user-management',
+          'analytics',
+          'real-time-sync'
+        ]
+      }
+      ```
+      :::::
+    
+    #title
+    Configure with [Simple Settings]{.text-primary}
+    
+    #description
+    Customize your application settings, connect services, and manage deployments through an intuitive configuration interface.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 md:col-span-1 min-h-[450px]
+    target: _blank
+    ---
+      :::::color-mode-switch
+      :::::
+    
+    #title
+    [Dark Mode]{.text-primary} Support
+    
+    #description
+    Every application includes built-in dark mode support and responsive design across all devices.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::u-color-mode-image
+      ---
+      height: 554
+      width: 859
+      alt: Built-in collaboration and project management"
+      class: rounded-lg
+      dark: /landing/dark/command-menu.png
+      format: webp
+      light: /landing/light/command-menu.png
+      loading: lazy
+      ---
+      :::::
+    
+    #title
+    Built-in [collaboration tools]{.text-primary}
+    
+    #description
+    Work with your team in real-time. Share projects, manage versions, and collaborate on applications without complex setup.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2
+    target: _blank
+    ---
+      :::::browser-frame
+      :video{.rounded-md controls loop playsinline src="https://res.cloudinary.com/nuxt/video/upload/v1747230893/studio/wzt9zfmdvk7hgmdx3cnt.mp4"}
+      :::::
+    
+    #title
+    Visual [AI Editing]{.text-primary}
+    
+    #description
+    Edit your applications visually with AI assistance. Select components, describe changes, and watch your app evolve in real-time without touching code.
+    ::::
+  
+    ::::u-page-card
+    ---
+    spotlight: true
+    class: col-span-2 lg:col-span-1
+    target: _blank
+    to: https://e2b.dev
+    ---
+      :::::div{.flex-1.flex.items-center.justify-center}
+        ::::::u-color-mode-image
+        ---
+        alt: Secure sandbox environment
+        class: w-[30%] lg:w-[70%] my-12 lg:my-0
+        dark: /landing/dark/nuxt-image.svg
+        light: /landing/light/nuxt-image.svg
+        ---
+        ::::::
+      :::::
+    
+    #title
+    [Secure Sandboxes]{.text-primary}
+    
+    #description
+    All code execution happens in secure, isolated environments powered by e2b.dev for maximum safety and reliability.
+    ::::
+  :::
+::
+
+
+# Introduction
+
+![CodinIT Platform](https://codinit.dev/opengraph.png){style="border-radius: 12px; max-width: 100%;"}
+
+## Product Capabilities
+
+The platform provides all the tools you need to create amazing websites, front-end applications as well as full-stack web applications from one browser tab - no installation required. CodinIT includes AI coding tools, real-time collaboration (beta test), and project sharing to give you a head start on your app creation journey.
+
+| Capability       | Description                                 | Maturity Level |
+| ---------------- | ------------------------------------------- | -------------- |
+| Frontend / UI    | Build user interfaces & frontend            | 🟢 Mature      |
+| Persistence      | Store and retrieve data                     | 🟢 Mature      |
+| Authentication   | Handle user login and accounts              | 🟢 Mature      |
+| Backend endpoint | API key protected endpoint such as OpenAI   | 🟢 Mature      |
+| Deployment       | Publish, custom domains & deploy            | 🟢 Mature      |
+| Collaboration    | Collaborate with other users within project | 🟢 Mature      |
+| Real-time sync   | Sync data across users in real-time         | 🟢 Mature      |
+
+## Quick Start
+
+To create your app on CodinIT, choose the guide that matches your needs:
+
+::steps{level="3"}
+### Getting Started
+
+Step-by-step tutorial for a simple introduction to key features and concepts.
+
+### Integrations
+
+Go beyond default features by integrating with third parties like Supabase, Stripe or others.
+
+### Prompt Engineering
+
+Learn effective prompting strategies and get the most out of CodinIT.
+
+### Custom Domain
+
+Add your own domain to any CodinIT site app.
+
+### Deploy
+
+Learn how to deploy, share, and get traffic to your web applications with CodinIT.
+::
+
+## What is CodinIT
+
+::callout{color="primary"}
+**Letting Ordinary Visionaries Achieve Breakthroughs with Language-based Engineering**
+
+CodinIT is an AI-powered platform that lets you create and deploy apps from a single browser tab. The platform eliminates the complexity of traditional app-creation environments by combining coding, deployment, and collaboration tools in a single interface.
+::
+
+Typically, you must install programs, languages, and packages to build apps. However, on CodinIT, you can rely on AI to configure your environment so you can start building without coding experience.
+
+The platform supports full-featured development and coding environments for those familiar with coding as well as those who are not, so there's no limit on what's possible.
+
+### Key Features
+
+- **Complete app generation** and setup from natural language description
+- **Code suggestions** and autocomplete
+- **Automated error detection** and debugging assistance
+- **Documentation generation** for your app
+- **App deployment** to the cloud in a few clicks
+- **Database integration** and hosting with Supabase native integration
+- **Custom domain support** and connection
+
+Your development environment structure will look like this:
+
+```text
+codinit-project/
+├── frontend/
+│   ├── app.js
+│   └── components/
+├── backend/
+│   ├── api/
+│   └── database/
+└── config.json
+```
+
+## Additional Resources
+
+::card-group
+  :::card{icon="i-lucide-folder-open" title="Templates"}
+  Browse and use project templates to quickly start your next project.
+  :::
+
+  :::card{icon="i-lucide-play-circle" title="Tutorial"}
+  Get a full overview of how to build an app with CodinIT.
+  :::
+
+  :::card{icon="i-lucide-wrench" title="Troubleshooting"}
+  Resolve issues in your development lifecycle.
+  :::
+
+  :::card{icon="i-lucide-star" title="Best Practices"}
+  Getting the Most Out of CodinIT.
+  :::
+
+  :::card{icon="i-lucide-users" title="Teams"}
+  Collaborate on your app in real time with teammates.
+  :::
+::
+
+## Stay Connected
+
+### Community & Support
+
+::card-group
+  :::card{icon="i-lucide-lightbulb" title="Feature Requests"}
+  Have an idea? Share it and let the community vote
+  :::
+
+  :::card{icon="i-lucide-help-circle" title="Community Support"}
+  Get help from our Community and Community Champions
+  :::
+
+  :::card{icon="i-lucide-bug" title="Issues"}
+  Found a bug or an issue? Let us know
+  :::
+
+  :::card{icon="i-lucide-headphones" title="Priority Support"}
+  Direct support channel for paying users
+  :::
+::
+
+### Programs & Partnerships
+
+::card-group
+  :::card{icon="i-lucide-rocket" title="Launched"}
+  Publish your app to get in front of thousands of people
+  :::
+
+  :::card{icon="i-lucide-handshake" title="Partner Program"}
+  Join as an expert, or get help from our network of experts
+  :::
+
+  :::card{icon="i-lucide-percent" title="Affiliate Program"}
+  Receive a 20% commission on the first 12 payments
+  :::
+::
+
+### Learn More
+
+::card-group
+  :::card{icon="i-lucide-globe" title="Website"}
+  Learn more about CodinIT
+  :::
+
+  :::card{icon="i-lucide-book-open" title="Glossary"}
+  Learn the key development terms
+  :::
+
+  :::card{icon="i-lucide-briefcase" title="Career"}
+  Join the CodinIT team
+  :::
+
+  :::card{icon="i-lucide-megaphone" title="Product Announcements"}
+  Compiled notes from the CodinIT team
+  :::
+::
+
+::tip
+🎉 Ready to start building? Choose your path from the Quick Start section above and begin creating your next application with CodinIT!
+::
+
+
+# Quickstart
+
+Get your first CodinIT application running in under 10 minutes with this comprehensive quickstart guide.
+
+::alert{color="green" icon="i-lucide-rocket"}
+**New to CodinIT?** This guide walks you through the complete workflow from project creation to deployment.
+::
+
+## Create Your First Project
+
+::steps{level="4"}
+#### Step 1: Start a New Project
+
+Navigate to your CodinIT dashboard and click **"Create New Project"**. Choose from:
+
+- 📱 **Mobile App** – Responsive mobile-first applications
+- 🌐 **Web Application** – Full-stack web apps with backend
+- 🎨 **Landing Page** – Marketing sites and portfolios
+- 📊 **Dashboard** – Data visualization and admin panels
+
+#### Step 2: Describe Your App
+
+Use natural language to describe what you want to build:
+
+```text
+Create a task management app with user authentication, 
+the ability to add, edit, and delete tasks, and a 
+dashboard showing task statistics.
+```
+
+#### Step 3: Review Generated Code
+
+CodinIT will generate your complete application. Review the:
+
+- Frontend components and styling
+- Backend API endpoints
+- Database schema and models
+- Authentication setup
+
+#### Step 4: Customize and Iterate
+
+Make changes using natural language prompts or direct code editing:
+
+```text
+Add a priority system to tasks with high, medium, low options.
+Style the app with a dark theme and modern card layout.
+```
+::
+
+## Essential Editing Features
+
+::card-group
+  :::card{icon="i-lucide-edit" title="AI-Powered Editing"}
+  Make changes using natural language prompts with instant preview
+  :::
+
+  :::card{icon="i-lucide-eye" title="Visual Editor"}
+  Click and edit components directly with AI-driven visual controls
+  :::
+
+  :::card{icon="i-lucide-undo" title="Version Control"}
+  Restore past versions instantly and bookmark important milestones
+  :::
+
+  :::card{icon="i-lucide-sparkles" title="Smart Suggestions"}
+  Get AI suggestions for improvements and feature additions
+  :::
+
+  :::card{icon="i-lucide-image-plus" title="Media Integration"}
+  Attach images and files directly to prompts for better context
+  :::
+
+  :::card{icon="i-lucide-layers" title="Component Library"}
+  Access pre-built components and templates for faster development
+  :::
+::
+
+## Knowledge Base Setup
+
+Organize your project information for better AI assistance:
+
+::steps{level="4"}
+#### Step 1: Access Knowledge Base
+
+Go to the Knowledge Base section in your dashboard.
+
+#### Step 2: Add Project Documentation
+
+Click "Add Entry" and categorize information under:
+
+- 📌 **Project Overview** – Define objectives and scope
+- 🚀 **Key Features** – List core functionalities
+- 🎨 **Design Guidelines** – Document UI/UX principles
+- 🔧 **Technical Requirements** – Specify technologies and constraints
+
+#### Step 3: Keep Information Current
+
+Regularly review and update entries as your project evolves to ensure development stays aligned with your vision.
+::
+
+## Add Backend Capabilities
+
+### Connect with Supabase
+
+Supabase integration provides powerful backend capabilities with minimal setup:
+
+::steps{level="4"}
+#### Step 1: Create Supabase Project
+
+Create an account on [Supabase](https://supabase.com){ariaLabel="Supabase Website" rel="nofollow"} and set up a new project.
+
+#### Step 2: Link to CodinIT
+
+In CodinIT, navigate to Settings → Connect Supabase and follow the integration steps.
+
+#### Step 3: Configure Data Models
+
+Set up database tables, manage user data, and configure real-time subscriptions.
+
+#### Step 4: Enable Authentication
+
+Configure user authentication flows including email verification and social logins.
+::
+
+### Authentication Implementation
+
+::tabs
+  :::div{label="Setup Process"}
+  **Step 1: Supabase Account Creation**
+  
+  Visit Supabase and sign up to access the project dashboard.
+  
+  **Step 2: Integration Configuration**
+  
+  Input your Supabase project URL and API keys to establish connection.
+  
+  **Step 3: Authentication Forms**
+  
+  Use CodinIT's AI form builder to create intuitive login and registration forms.
+  
+  **Step 4: Workflow Implementation**
+  
+  Set up Supabase Edge Functions for token validation and session management.
+  :::
+
+  :::div{label="Advanced Features"}
+  **Email Verification**
+  
+  Configure automated email verification upon user registration.
+  
+  **Social Authentication**
+  
+  Enable Google, GitHub, and other OAuth provider integrations.
+  
+  **Role-Based Access**
+  
+  Implement user roles and permissions for secure access control.
+  
+  **Session Management**
+  
+  Handle user sessions with automatic refresh and secure logout.
+  :::
+::
+
+## Testing and Deployment
+
+### Preview Your Application
+
+::alert{color="blue" icon="i-lucide-monitor"}
+**Live Preview** - Every change is instantly reflected in the preview pane, allowing you to test functionality in real-time.
+::
+
+- **Responsive Testing** – Check how your app looks on different device sizes
+- **Feature Testing** – Test user flows and interactions
+- **Performance Monitoring** – Monitor loading times and responsiveness
+
+### Deploy to Production
+
+::steps{level="3"}
+### Step 1: Pre-Deployment Check
+
+Review your application for:
+
+- Functionality completeness
+- Responsive design across devices
+- Performance optimization
+- Error handling
+
+### Step 2: Choose Deployment Option
+
+Select from multiple deployment options:
+
+- **CodinIT Hosting** – Instant deployment with custom domain support
+- **GitHub Integration** – Deploy via GitHub Pages or other CI/CD platforms
+- **Custom Hosting** – Export code for deployment anywhere
+
+### Step 3: Configure Custom Domain
+
+Add your custom domain for professional deployment:
+
+- Point your domain to CodinIT's servers
+- Configure SSL certificates automatically
+- Set up redirect rules and routing
+::
+
+## Next Steps
+
+::card-group
+  :::card
+  ---
+  ariaLabel: Learn about team collaboration features
+  icon: i-lucide-users
+  title: Team Collaboration
+  to: https://docs.codinit.dev/getting-started/teams
+  ---
+  Invite team members and collaborate in real-time
+  :::
+
+  :::card
+  ---
+  ariaLabel: Connect with third-party services and APIs
+  icon: i-lucide-puzzle
+  title: Integrations
+  to: https://docs.codinit.dev/integrations/github
+  ---
+  Connect with third-party services and APIs
+  :::
+
+  :::card
+  ---
+  ariaLabel: Explore framework-specific development resources
+  icon: i-lucide-code
+  title: Developer Tools
+  to: https://docs.codinit.dev/getting-started/developer-docs
+  ---
+  Explore framework-specific development resources
+  :::
+::
+
+::tip
+🎉 **Congratulations!** You've completed the quickstart guide. Your application is ready for further development and customization. Explore the advanced features to build even more powerful applications.
+::
+
+
+# Teams
+
+CodinIT lets you build apps together, live. Invite your designer, developer, agency, or anyone else to your workspace. Everyone sees changes as they happen.
+
+Each subscription is now connected to a workspace:
+
+::card-group
+  :::card{color="primary" icon="i-lucide-user" title="Pro Subscription"}
+  Personal workspaces with up to 2 collaborators per project. Collaborators use project owner credits.
+  :::
+
+  :::card{color="green" icon="i-lucide-users" title="Teams Subscription"}
+  Up to 20 users in workspace. Owners & admins manage users and projects. Shared credit pool for all users.
+  :::
+::
+
+## Create a Workspace
+
+A workspace is your shared space for building and collaborating on projects.
+
+::steps{level="3"}
+### Step 1: Create New Workspace
+
+Click **"Create new workspace"** from the dashboard or any project.
+
+### Step 2: Name Your Workspace
+
+Choose a descriptive name for your workspace that reflects your team or project.
+
+### Step 3: Choose a Plan
+
+Select a plan for your workspace that fits your team's needs and collaboration requirements.
+::
+
+## Rename a Workspace
+
+::steps{level="3"}
+### Step 1: Switch to Workspace
+
+Make sure you're in the right workspace (switch if needed).
+
+### Step 2: Go to Settings
+
+Navigate to **Settings** from your workspace dashboard.
+
+### Step 3: Edit Details
+
+Edit the **Workspace name** and **description** to reflect any changes in your team or project focus.
+::
+
+## Invite & Manage Collaborators
+
+::steps{level="3"}
+### Step 1: Upgrade Your Plan
+
+Upgrade your plan if you're not on the **Teams** tier.
+
+### Step 2: Click Invite
+
+Click **"Invite"** in a project or from the dashboard.
+
+### Step 3: Send Invites
+
+Enter email addresses to send invites to your team members.
+
+### Step 4: Teammates Join
+
+When they accept, they'll join your workspace and see all projects.
+::
+
+## Real-Time Collaboration
+
+Once teammates join your workspace, you'll experience seamless real-time collaboration:
+
+::card-group
+  :::card{icon="i-lucide-cursor-arrow-rays" title="Live Cursors"}
+  See their cursor and live changes as they work
+  :::
+
+  :::card{icon="i-lucide-circle-dot" title="Team Presence"}
+  Icons in top-right corner show who's online
+  :::
+
+  :::card{icon="i-lucide-edit" title="Instant Editing"}
+  Edit any element together, instantly
+  :::
+
+  :::card{icon="i-lucide-refresh-cw" title="Synchronized Changes"}
+  All modifications reflected immediately across team members
+  :::
+::
+
+## Move a Project Between Workspaces
+
+::steps{level="3"}
+### Step 1: Open Project Settings
+
+In your project, open **Settings**.
+
+### Step 2: Find Workspaces Section
+
+Scroll to the **Workspaces** section in project settings.
+
+### Step 3: Change Workspace
+
+Click **"Change Workspace"** and select the new destination workspace.
+::
+
+## Managing Access
+
+Key points about workspace access management:
+
+- **Full project access**: Teammates have access to all workspace projects
+- **Easy workspace switching**: Switch between teams from the dashboard sidebar
+- **Email verification required**: Everyone must accept their email invite to join
+- **Perfect for teams**: Ideal for friends, startups, and smaller enterprise teams
+
+::callout{color="primary"}
+**Centralized Collaboration**: Workspaces are perfect for teams collaborating on the same app or wanting centralized billing and project management.
+::
+
+## Permissions
+
+Different roles have different levels of access within your workspace:
+
+| Action                                              | Owner | Admin | Editor |
+| --------------------------------------------------- | ----- | ----- | ------ |
+| Edit projects                                       | ✓     | ✓     | ✓      |
+| Publish projects                                    | ✓     | ✓     | ✓      |
+| Connect/disconnect Supabase org to workspace        | ✓     | ✓     | ✗      |
+| Connect/disconnect Supabase project org to projects | ✓     | ✓     | ✗      |
+| Connect/disconnect GitHub org to workspace          | ✓     | ✓     | ✗      |
+| Connect/disconnect GitHub repo org to projects      | ✓     | ✓     | ✗      |
+| Invite project-level collaborators                  | ✓     | ✓     | ✗      |
+| Transfer projects to other workspaces               | ✓     | ✓     | ✗      |
+| Set roles for others                                | ✓     | ✓     | ✗      |
+
+### Role Descriptions
+
+::field-group
+  :::field{name="Owner" type="role"}
+  Full administrative control over the workspace, billing, and all projects
+  :::
+
+  :::field{name="Admin" type="role"}
+  Can manage most aspects of the workspace and projects, but cannot modify other admin roles
+  :::
+
+  :::field{name="Editor" type="role"}
+  Can edit and publish projects but cannot manage workspace settings, integrations, or user permissions
+  :::
+::
+
+## Advanced Team Features
+
+::card-group
+  :::card{icon="i-lucide-credit-card" title="Credit Management"}
+  All users share the connected credit pool for easy resource management across your team.
+  :::
+
+  :::card{icon="i-simple-icons:github" title="Integration Management"}
+  Owners and Admins can connect organizational accounts for Supabase and GitHub.
+  :::
+
+  :::card{icon="i-lucide-folder" title="Project Organization"}
+  Keep team projects organized with workspace-level management and easy transfers.
+  :::
+::
+
+::tip
+🎉 Ready to collaborate? Create your workspace and start building together with your team! Invite your designers, developers, and stakeholders to experience real-time collaborative development with CodinIT.
+::
+
+
+# Developer Docs
+
+::callout{color="blue" icon="i-heroicons-code-bracket"}
+**Framework-Focused Prompts:** Specialized prompt patterns for Next.js, Python, Gradio, and Streamlit development. Copy, modify, and use these templates to build better applications faster.
+::
+
+## Overview
+
+This library provides targeted prompting strategies for specific development frameworks. Each section contains proven patterns, best practices, and ready-to-use prompts tailored to the unique characteristics of each technology stack.
+
+::alert{color="green" icon="i-heroicons-light-bulb"}
+**Pro Tip:** These prompts are designed to work with any AI coding assistant. Adapt the examples to your specific project needs.
+::
+
+## Frameworks
+
+::card-group{cols="2"}
+  :::card{icon="i-simple-icons-nextdotjs" title="Next.js Development"}
+  Full-stack React framework with SSR, API routes, and modern tooling.
+  
+  :badge[React]{color="blue" variant="outline"} :badge[TypeScript]{color="blue" variant="outline"} :badge[Full-Stack]{color="green" variant="outline"}
+  :::
+
+  :::card{icon="i-simple-icons-python" title="Python Development"}
+  Backend services, data processing, and general-purpose applications.
+  
+  :badge[Backend]{color="orange" variant="outline"} :badge[Data Science]{color="purple" variant="outline"} :badge[APIs]{color="emerald" variant="outline"}
+  :::
+
+  :::card{icon="i-heroicons-chart-bar" title="Gradio Development"}
+  Rapid ML model deployment and interactive data science applications.
+  
+  :badge[ML/AI]{color="red" variant="outline"} :badge[Interactive]{color="cyan" variant="outline"} :badge[Prototyping]{color="amber" variant="outline"}
+  :::
+
+  :::card
+  ---
+  icon: i-heroicons-presentation-chart-line
+  title: Streamlit Development
+  ---
+  Data apps and dashboards with Python-first development approach.
+  
+  :badge[Data Apps]{color="indigo" variant="outline"} :badge[Dashboards]{color="pink" variant="outline"} :badge[Analytics]{color="teal" variant="outline"}
+  :::
+::
+
+---
+
+## Next.js Development
+
+::callout{color="black" icon="i-simple-icons-nextdotjs"}
+**Modern React framework with server-side rendering, API routes, and optimized performance.**
+::
+
+### Project Setup & Architecture
+
+::tabs
+  :::div{label="New Project Setup"}
+  ```markdown
+  Create a new Next.js 14 application with the following specifications:
+  
+  **Tech Stack:**
+  - Next.js 14 with App Router
+  - TypeScript for type safety
+  - Tailwind CSS for styling
+  - Prisma with PostgreSQL for database
+  - NextAuth.js for authentication
+  
+  **Project Structure:**
+  - `/app` directory structure with proper layouts
+  - `/components` for reusable UI components
+  - `/lib` for utilities and database configuration
+  - `/types` for TypeScript definitions
+  
+  **Initial Features:**
+  - Landing page with hero section and navigation
+  - User authentication (sign up, login, logout)
+  - Protected dashboard route
+  - Responsive design with dark mode support
+  
+  Set up the basic project structure and create placeholder components for each feature.
+  ```
+  :::
+
+  :::div{label="App Router Migration"}
+  ```markdown
+  Help me migrate this Next.js pages router application to the new App Router:
+  
+  [Paste your current pages structure]
+  
+  **Requirements:**
+  - Convert all pages to the new app directory structure
+  - Update routing and navigation patterns
+  - Migrate API routes to the new route handlers
+  - Ensure all layouts and nested routing work correctly
+  - Maintain the same functionality and URLs
+  
+  **Focus Areas:**
+  - File-based routing in /app directory
+  - layout.tsx and page.tsx conventions
+  - Server and client component optimization
+  - Metadata API implementation
+  ```
+  :::
+
+  :::div{label="Component Architecture"}
+  ```markdown
+  Design a scalable component architecture for a [describe app type] application:
+  
+  **Component Categories:**
+  - UI components (buttons, inputs, cards)
+  - Layout components (header, sidebar, footer)
+  - Feature components (user profile, product listing)
+  - Page components (home, dashboard, settings)
+  
+  **Requirements:**
+  - TypeScript interfaces for all props
+  - Compound component patterns where appropriate
+  - Accessibility features (ARIA labels, keyboard navigation)
+  - Consistent styling with Tailwind CSS variants
+  - Storybook-ready component structure
+  
+  Include examples of 2-3 components with proper TypeScript typing.
+  ```
+  :::
+::
+
+### API Routes & Server Components
+
+::tabs
+  :::div{label="API Route Handlers"}
+  ```markdown
+  Create Next.js 14 API route handlers for a [describe resource] with:
+  
+  **Endpoints:**
+  - GET /api/[resource] - List all items with pagination
+  - GET /api/[resource]/[id] - Get single item
+  - POST /api/[resource] - Create new item
+  - PUT /api/[resource]/[id] - Update existing item
+  - DELETE /api/[resource]/[id] - Delete item
+  
+  **Requirements:**
+  - TypeScript with proper request/response typing
+  - Input validation using Zod schemas
+  - Error handling with appropriate HTTP status codes
+  - Database operations with Prisma ORM
+  - Authentication middleware integration
+  - Rate limiting for production use
+  
+  Include proper error responses and success messages.
+  ```
+  :::
+
+  :::div{label="Server Components"}
+  ```markdown
+  Create a server component for [describe functionality] that:
+  
+  **Data Fetching:**
+  - Fetches data directly in the component
+  - Implements proper error boundaries
+  - Shows loading states appropriately
+  - Handles edge cases (empty states, errors)
+  
+  **Performance:**
+  - Optimizes database queries
+  - Implements proper caching strategies
+  - Uses React Suspense for progressive loading
+  - Minimizes client-side JavaScript
+  
+  **SEO:**
+  - Generates proper metadata
+  - Implements structured data where relevant
+  - Ensures fast page load times
+  
+  Show the complete component with TypeScript types.
+  ```
+  :::
+
+  :::div{label="Database Integration"}
+  ```markdown
+  Set up Prisma with PostgreSQL for a [describe app] application:
+  
+  **Database Schema:**
+  - Design models for [list main entities]
+  - Include proper relationships and constraints
+  - Add indexes for performance optimization
+  - Implement soft deletes where appropriate
+  
+  **Prisma Setup:**
+  - Create the schema.prisma file
+  - Set up database connection and environment variables
+  - Generate TypeScript types
+  - Create seed data for development
+  
+  **Integration:**
+  - Database utility functions in /lib/db.ts
+  - Connection pooling configuration
+  - Error handling patterns
+  - Migration strategies
+  
+  Include the complete Prisma schema and key utility functions.
+  ```
+  :::
+::
+
+### Authentication & Security
+
+::tabs
+  :::div{label="NextAuth.js Setup"}
+  ```markdown
+  Implement authentication using NextAuth.js v5 with:
+  
+  **Providers:**
+  - Email/password authentication
+  - Google OAuth integration
+  - GitHub OAuth integration
+  - Magic link email authentication
+  
+  **Database Integration:**
+  - User model with Prisma
+  - Session management
+  - Account linking
+  - Role-based access control
+  
+  **Security Features:**
+  - CSRF protection
+  - Secure session cookies
+  - Password hashing with bcrypt
+  - Email verification flow
+  
+  **UI Components:**
+  - Login/signup forms with validation
+  - Password reset functionality
+  - Profile management page
+  - Protected route middleware
+  
+  Include the complete auth configuration and key components.
+  ```
+  :::
+
+  :::div{label="Middleware & Protection"}
+  ```markdown
+  Create Next.js middleware for:
+  
+  **Route Protection:**
+  - Authenticate users before accessing protected routes
+  - Redirect unauthenticated users to login
+  - Role-based route access control
+  - API route authentication
+  
+  **Security Headers:**
+  - CSP (Content Security Policy)
+  - HSTS (HTTP Strict Transport Security)
+  - X-Frame-Options
+  - X-Content-Type-Options
+  
+  **Performance:**
+  - Request/response logging
+  - Rate limiting implementation
+  - Geolocation-based redirects
+  - A/B testing support
+  
+  Show the complete middleware.ts file with TypeScript types.
+  ```
+  :::
+::
+
+### Performance & SEO
+
+::tabs
+  :::div{label="Image Optimization"}
+  ```markdown
+  Implement Next.js image optimization for a [describe app type]:
+  
+  **Image Component Usage:**
+  - Responsive images with proper sizing
+  - Lazy loading with intersection observer
+  - Placeholder blur effects
+  - Art direction for different breakpoints
+  
+  **Performance Optimization:**
+  - WebP/AVIF format conversion
+  - Proper width and height specifications
+  - Priority loading for above-the-fold images
+  - Image caching strategies
+  
+  **Implementation:**
+  - Gallery component with optimized images
+  - Avatar upload with automatic resizing
+  - Product image carousel
+  - Background images with Next.js Image
+  
+  Include examples of different image use cases with proper configuration.
+  ```
+  :::
+
+  :::div{label="SEO & Metadata"}
+  ```markdown
+  Implement comprehensive SEO for a [describe app type] using Next.js 14:
+  
+  **Metadata API:**
+  - Dynamic page titles and descriptions
+  - Open Graph tags for social sharing
+  - Twitter Card implementation
+  - Canonical URLs and alternate languages
+  
+  **Structured Data:**
+  - JSON-LD schema markup
+  - Rich snippets for [relevant content type]
+  - Breadcrumb navigation
+  - FAQ schema where applicable
+  
+  **Technical SEO:**
+  - XML sitemap generation
+  - Robots.txt configuration
+  - 404 and error page optimization
+  - Page speed optimization
+  
+  **Analytics Integration:**
+  - Google Analytics 4 setup
+  - Google Search Console verification
+  - Core Web Vitals tracking
+  
+  Show the complete metadata configuration and SEO components.
+  ```
+  :::
+::
+
+---
+
+## Python Development
+
+::callout{color="yellow" icon="i-simple-icons-python"}
+**Versatile programming language for backend services, data processing, and automation.**
+::
+
+### Web APIs & Backend Services
+
+::tabs
+  :::div{label="FastAPI Application"}
+  ```markdown
+  Create a FastAPI application for [describe purpose] with:
+  
+  **Project Structure:**
+  - Modular architecture with separate routers
+  - Database models with SQLAlchemy
+  - Pydantic models for request/response validation
+  - Dependency injection for database sessions
+  - Authentication and authorization system
+  
+  **Features:**
+  - CRUD operations for [main entities]
+  - User authentication with JWT tokens
+  - File upload and processing
+  - Background tasks with Celery
+  - API documentation with automatic OpenAPI
+  
+  **Database:**
+  - PostgreSQL with asyncpg driver
+  - Alembic migrations
+  - Connection pooling
+  - Database indexing strategy
+  
+  Include the main application file, models, and key router examples.
+  ```
+  :::
+
+  :::div{label="Django REST API"}
+  ```markdown
+  Build a Django REST Framework API for [describe application]:
+  
+  **Models & Database:**
+  - Django models with proper relationships
+  - Custom model managers and querysets
+  - Database optimization with select_related/prefetch_related
+  - Custom migrations for data transformation
+  
+  **API Endpoints:**
+  - ViewSets with custom actions
+  - Serializers with validation
+  - Pagination and filtering
+  - Permission classes for authorization
+  - Custom authentication backends
+  
+  **Additional Features:**
+  - Celery for background tasks
+  - Redis for caching
+  - Email notifications
+  - File handling with Django Storage
+  - API versioning strategy
+  
+  Show the complete models.py, serializers.py, and views.py files.
+  ```
+  :::
+
+  :::div{label="Flask Microservice"}
+  ```markdown
+  Create a Flask microservice for [specific functionality]:
+  
+  **Application Structure:**
+  - Factory pattern with application configuration
+  - Blueprint organization for different modules
+  - Database integration with SQLAlchemy
+  - Marshmallow for serialization
+  - Flask-JWT-Extended for authentication
+  
+  **Key Features:**
+  - RESTful API endpoints
+  - Input validation and error handling
+  - Logging and monitoring setup
+  - Docker containerization
+  - Health check endpoints
+  
+  **Production Setup:**
+  - Gunicorn WSGI server configuration
+  - Environment-based configuration
+  - Database connection pooling
+  - Rate limiting with Flask-Limiter
+  - CORS handling
+  
+  Include the complete application factory and main blueprint.
+  ```
+  :::
+::
+
+### Data Processing & Analysis
+
+::tabs
+  :::div{label="Pandas Data Pipeline"}
+  ```markdown
+  Create a data processing pipeline using pandas for [describe data type]:
+  
+  **Data Ingestion:**
+  - Read from multiple sources (CSV, JSON, API, database)
+  - Handle different file formats and encodings
+  - Data validation and quality checks
+  - Error handling for malformed data
+  
+  **Data Transformation:**
+  - Clean and standardize data formats
+  - Handle missing values appropriately
+  - Create derived columns and calculations
+  - Aggregate data for analysis
+  - Merge and join datasets
+  
+  **Data Export:**
+  - Export to different formats (CSV, Excel, Parquet)
+  - Database bulk operations
+  - API data posting
+  - Data quality reports
+  
+  **Performance:**
+  - Chunk processing for large datasets
+  - Memory optimization techniques
+  - Parallel processing where applicable
+  
+  Include the complete pipeline script with error handling.
+  ```
+  :::
+
+  :::div{label="Data Visualization"}
+  ```markdown
+  Create comprehensive data visualizations for [describe dataset]:
+  
+  **Visualization Libraries:**
+  - Matplotlib for statistical plots
+  - Seaborn for enhanced statistical visualization
+  - Plotly for interactive charts
+  - Altair for declarative visualization
+  
+  **Chart Types:**
+  - Time series analysis plots
+  - Distribution and correlation analysis
+  - Geographic data visualization
+  - Multi-dimensional data exploration
+  - Statistical significance testing
+  
+  **Interactive Features:**
+  - Plotly Dash dashboard
+  - Jupyter notebook with widgets
+  - Export functionality (PNG, SVG, PDF)
+  - Responsive design for different screen sizes
+  
+  **Performance:**
+  - Efficient data sampling for large datasets
+  - Lazy loading for interactive elements
+  - Caching for expensive computations
+  
+  Show examples of key visualizations with customization options.
+  ```
+  :::
+
+  :::div{label="Machine Learning Pipeline"}
+  ```markdown
+  Build a complete ML pipeline for [describe ML task]:
+  
+  **Data Preparation:**
+  - Feature engineering and selection
+  - Data preprocessing and scaling
+  - Train/validation/test split
+  - Cross-validation strategy
+  - Handling imbalanced datasets
+  
+  **Model Development:**
+  - Multiple algorithm comparison
+  - Hyperparameter tuning with GridSearch/RandomSearch
+  - Model evaluation with appropriate metrics
+  - Feature importance analysis
+  - Model interpretability (SHAP, LIME)
+  
+  **Production Pipeline:**
+  - Model serialization with joblib/pickle
+  - Prediction API endpoint
+  - Model monitoring and drift detection
+  - A/B testing framework
+  - Automated retraining pipeline
+  
+  **MLOps:**
+  - Experiment tracking with MLflow
+  - Model versioning
+  - Containerized deployment
+  - CI/CD for ML models
+  
+  Include the complete pipeline from data to deployment.
+  ```
+  :::
+::
+
+### Automation & Scripting
+
+::tabs
+  :::div{label="Web Scraping"}
+  ```markdown
+  Create a robust web scraping system for [describe target]:
+  
+  **Scraping Framework:**
+  - Scrapy spiders with custom pipelines
+  - BeautifulSoup for HTML parsing
+  - Selenium for JavaScript-heavy sites
+  - Requests with session management
+  - Proxy rotation and rate limiting
+  
+  **Data Extraction:**
+  - CSS selectors and XPath expressions
+  - Dynamic content handling
+  - Form submission and interaction
+  - File download and processing
+  - Multi-page navigation
+  
+  **Robustness:**
+  - Error handling and retry logic
+  - Captcha detection and handling
+  - User-agent rotation
+  - Respect for robots.txt
+  - Monitoring and alerting
+  
+  **Data Storage:**
+  - Database integration
+  - File export in multiple formats
+  - Data deduplication
+  - Incremental updates
+  
+  Show the complete scraper with proper error handling.
+  ```
+  :::
+
+  :::div{label="Automation Scripts"}
+  ```markdown
+  Create automation scripts for [describe tasks]:
+  
+  **File Management:**
+  - Automated file organization
+  - Batch file processing
+  - Directory synchronization
+  - File format conversion
+  - Backup and archival systems
+  
+  **System Integration:**
+  - API integrations with third-party services
+  - Database maintenance tasks
+  - Report generation and distribution
+  - Email automation
+  - Scheduled task execution
+  
+  **Monitoring:**
+  - System health checks
+  - Performance monitoring
+  - Error notification systems
+  - Log aggregation and analysis
+  - Resource usage tracking
+  
+  **Configuration:**
+  - Environment-based settings
+  - Command-line argument parsing
+  - Configuration file management
+  - Secrets management
+  
+  Include examples of different automation scenarios.
+  ```
+  :::
+
+  :::div{label="Testing & Quality"}
+  ```markdown
+  Implement comprehensive testing for [describe Python application]:
+  
+  **Testing Framework:**
+  - pytest with fixtures and parametrization
+  - Unit tests for individual functions
+  - Integration tests for API endpoints
+  - End-to-end tests for complete workflows
+  - Performance tests with pytest-benchmark
+  
+  **Test Coverage:**
+  - Code coverage with pytest-cov
+  - Test coverage reporting
+  - Coverage thresholds and enforcement
+  - Mutation testing with mutmut
+  
+  **Mocking & Fixtures:**
+  - Database fixtures for testing
+  - API mocking with responses/httpx_mock
+  - File system mocking
+  - Time-based testing
+  
+  **Quality Assurance:**
+  - Code formatting with black
+  - Import sorting with isort
+  - Linting with flake8/pylint
+  - Type checking with mypy
+  - Security scanning with bandit
+  
+  Show the complete testing setup with CI/CD integration.
+  ```
+  :::
+::
+
+---
+
+## Gradio Development
+
+::callout{color="orange" icon="i-heroicons-chart-bar"}
+**Rapid deployment of machine learning models with interactive web interfaces.**
+::
+
+### ML Model Interfaces
+
+::tabs
+  :::div{label="Image Classification"}
+  ```markdown
+  Create a Gradio interface for an image classification model:
+  
+  **Model Integration:**
+  - Load pre-trained model (PyTorch/TensorFlow/Hugging Face)
+  - Image preprocessing pipeline
+  - Batch prediction support
+  - Confidence score display
+  - Class probability visualization
+  
+  **Interface Features:**
+  - Image upload with drag-and-drop
+  - Webcam capture option
+  - Example images for testing
+  - Real-time prediction updates
+  - Results export functionality
+  
+  **Visualization:**
+  - Confidence bar charts
+  - Confusion matrix display
+  - Feature activation maps
+  - Prediction history tracking
+  - Model performance metrics
+  
+  **Advanced Features:**
+  - Multiple model comparison
+  - Custom image augmentation
+  - Batch processing interface
+  - Model explanation with LIME/SHAP
+  
+  Include the complete Gradio app with proper error handling.
+  ```
+  :::
+
+\::div{label="Text Analysis"]
+
+```markdown
+Build a Gradio app for text analysis with [specific NLP task]:
+
+**NLP Pipeline:**
+- Text preprocessing (tokenization, normalization)
+- Model inference with transformers
+- Post-processing and result formatting
+- Multi-language support
+- Sentiment analysis visualization
+
+**Interface Components:**
+- Text input with character/word limits
+- File upload for batch processing
+- Language selection dropdown
+- Results highlighting and annotation
+- Export options (JSON, CSV, TXT)
+
+**Analysis Features:**
+- Named Entity Recognition highlighting
+- Sentiment score visualization
+- Topic modeling results
+- Text similarity comparisons
+- Keyword extraction
+
+**Performance:**
+- Streaming for long texts
+- Progress bars for batch processing
+- Caching for repeated queries
+- GPU optimization if available
+
+Show the complete text analysis interface.
+```
+
+\::
+
+  :::div{label="Data Science Tools"}
+  ```markdown
+  Create a Gradio interface for data analysis and visualization:
+  
+  **Data Input:**
+  - CSV/Excel file upload
+  - URL data loading
+  - Database connections
+  - API data fetching
+  - Sample datasets
+  
+  **Analysis Tools:**
+  - Descriptive statistics
+  - Correlation analysis
+  - Distribution visualization
+  - Outlier detection
+  - Missing value analysis
+  
+  **Visualization:**
+  - Interactive plots with Plotly
+  - Statistical charts
+  - Correlation heatmaps
+  - Time series analysis
+  - Geographic visualizations
+  
+  **Export Features:**
+  - Download processed data
+  - Export visualizations
+  - Generate analysis reports
+  - Share analysis results
+  
+  Include data validation and error handling.
+  ```
+  :::
+::
+
+### Interactive Demos
+
+::tabs
+  :::div{label="Model Comparison"}
+  ```markdown
+  Build a Gradio app to compare multiple [type] models:
+  
+  **Model Management:**
+  - Load multiple pre-trained models
+  - Model metadata and descriptions
+  - Performance benchmarks display
+  - Model switching interface
+  - Version comparison
+  
+  **Comparison Features:**
+  - Side-by-side predictions
+  - Performance metrics comparison
+  - Inference time measurement
+  - Accuracy/quality scoring
+  - Visual difference highlighting
+  
+  **Interactive Elements:**
+  - Parameter adjustment sliders
+  - Real-time updates
+  - A/B testing interface
+  - User preference voting
+  - Feedback collection
+  
+  **Results Analysis:**
+  - Statistical significance testing
+  - Performance trend analysis
+  - User preference analytics
+  - Model recommendation system
+  
+  Show the complete multi-model comparison interface.
+  ```
+  :::
+
+  :::div{label="Fine-tuning Interface"}
+  ```markdown
+  Create a Gradio interface for model fine-tuning:
+  
+  **Data Management:**
+  - Training data upload
+  - Data validation and preview
+  - Data augmentation options
+  - Train/validation split
+  - Data quality metrics
+  
+  **Training Configuration:**
+  - Hyperparameter selection
+  - Training schedule setup
+  - Early stopping configuration
+  - Checkpoint management
+  - Resource allocation
+  
+  **Training Monitoring:**
+  - Real-time loss/metric plots
+  - Training progress tracking
+  - Resource usage monitoring
+  - Early stopping triggers
+  - Model evaluation
+  
+  **Model Export:**
+  - Trained model download
+  - Model format conversion
+  - Deployment configuration
+  - Performance reports
+  
+  Include proper error handling and resource management.
+  ```
+  :::
+
+  :::div{label="Research Demos"}
+  ```markdown
+  Build a Gradio demo for [research topic/paper]:
+  
+  **Research Showcase:**
+  - Interactive paper abstract
+  - Method explanation with visuals
+  - Parameter exploration interface
+  - Results reproduction
+  - Comparison with baselines
+  
+  **Educational Features:**
+  - Step-by-step algorithm walkthrough
+  - Parameter sensitivity analysis
+  - Visual explanation of concepts
+  - Interactive examples
+  - Educational tooltips
+  
+  **Experimentation:**
+  - Custom dataset upload
+  - Parameter tuning interface
+  - Real-time visualization
+  - Experiment comparison
+  - Results sharing
+  
+  **Documentation:**
+  - Methodology explanations
+  - Usage instructions
+  - Citation information
+  - Related work links
+  
+  Show the complete research demonstration interface.
+  ```
+  :::
+::
+
+### Production Deployment
+
+::tabs
+  :::div{label="Hugging Face Spaces"}
+  ```markdown
+  Deploy a Gradio app to Hugging Face Spaces:
+  
+  **Deployment Setup:**
+  - requirements.txt with exact versions
+  - app.py with proper Gradio configuration
+  - README.md with app description
+  - Dockerfile for custom environments
+  - Environment variables configuration
+  
+  **Performance Optimization:**
+  - Model caching strategies
+  - Memory management
+  - GPU utilization (if available)
+  - Concurrent user handling
+  - Request queuing
+  
+  **User Experience:**
+  - Loading states and progress bars
+  - Error handling and user feedback
+  - Mobile-responsive design
+  - Accessibility features
+  - Usage analytics
+  
+  **Monitoring:**
+  - Error logging and tracking
+  - Performance metrics
+  - User interaction analytics
+  - Resource usage monitoring
+  
+  Include the complete deployment configuration.
+  ```
+  :::
+
+  :::div{label="Custom Hosting"}
+  ```markdown
+  Set up custom hosting for a Gradio application:
+  
+  **Server Setup:**
+  - Docker containerization
+  - Nginx reverse proxy configuration
+  - SSL certificate setup
+  - Load balancing for multiple instances
+  - Auto-scaling configuration
+  
+  **Security:**
+  - Authentication integration
+  - Rate limiting
+  - Input validation
+  - CORS configuration
+  - Security headers
+  
+  **Monitoring & Logging:**
+  - Application logging
+  - Performance monitoring
+  - Error tracking
+  - User analytics
+  - Health checks
+  
+  **CI/CD Pipeline:**
+  - Automated testing
+  - Deployment automation
+  - Rollback strategies
+  - Environment management
+  
+  Show the complete hosting setup with Docker and infrastructure code.
+  ```
+  :::
+::
+
+---
+
+## Streamlit Development
+
+::callout{color="red" icon="i-heroicons-presentation-chart-line"}
+**Python-first framework for building data applications and interactive dashboards.**
+::
+
+### Data Dashboards
+
+::tabs
+  :::div{label="Analytics Dashboard"}
+  ```markdown
+  Create a comprehensive analytics dashboard using Streamlit:
+  
+  **Data Sources:**
+  - Multiple data source connections (CSV, database, API)
+  - Real-time data refresh capabilities
+  - Data caching for performance
+  - Error handling for data loading
+  - Data validation and cleaning
+  
+  **Dashboard Layout:**
+  - Multi-page application structure
+  - Sidebar navigation and filters
+  - Responsive grid layout
+  - Customizable date ranges
+  - Export functionality
+  
+  **Visualizations:**
+  - KPI metrics with st.metric()
+  - Interactive charts with Plotly
+  - Data tables with filtering/sorting
+  - Geographic visualizations
+  - Time series analysis
+  
+  **Interactivity:**
+  - Dynamic filtering and drill-down
+  - Cross-chart interactions
+  - Real-time updates
+  - User preference saving
+  - Dashboard customization
+  
+  Include the complete multi-page dashboard with caching.
+  ```
+  :::
+
+  :::div{label="Financial Dashboard"}
+  ```markdown
+  Build a financial analysis dashboard with Streamlit:
+  
+  **Data Integration:**
+  - Stock price APIs (Yahoo Finance, Alpha Vantage)
+  - Economic indicators
+  - Portfolio data import
+  - Real-time market data
+  - Historical data analysis
+  
+  **Financial Calculations:**
+  - Portfolio performance metrics
+  - Risk analysis (VaR, Sharpe ratio)
+  - Technical indicators
+  - Correlation analysis
+  - Monte Carlo simulations
+  
+  **Visualizations:**
+  - Candlestick charts
+  - Portfolio allocation pie charts
+  - Performance comparison charts
+  - Risk-return scatter plots
+  - Drawdown analysis
+  
+  **Features:**
+  - Stock screener
+  - Backtesting interface
+  - Alert system
+  - Report generation
+  - Export to Excel/PDF
+  
+  Show the complete financial dashboard with proper data handling.
+  ```
+  :::
+
+  :::div{label="Business Intelligence"}
+  ```markdown
+  Create a business intelligence dashboard for [business domain]:
+  
+  **Data Pipeline:**
+  - ETL processes for business data
+  - Data warehouse connections
+  - Automated data refresh
+  - Data quality monitoring
+  - Historical data management
+  
+  **Business Metrics:**
+  - Revenue and growth analysis
+  - Customer acquisition metrics
+  - Operational efficiency KPIs
+  - Forecasting and trends
+  - Competitive analysis
+  
+  **Interactive Features:**
+  - Drill-down capabilities
+  - Dynamic segmentation
+  - Comparative analysis
+  - Goal tracking
+  - Scenario planning
+  
+  **Reporting:**
+  - Automated report generation
+  - Executive summaries
+  - Departmental dashboards
+  - Mobile-responsive design
+  - Scheduled report delivery
+  
+  Include the complete BI dashboard with user role management.
+  ```
+  :::
+::
+
+### Machine Learning Apps
+
+::tabs
+  :::div{label="Model Training Interface"}
+  ```markdown
+  Build a Streamlit app for machine learning model training:
+  
+  **Data Management:**
+  - Dataset upload and validation
+  - Data preprocessing options
+  - Feature engineering interface
+  - Data visualization and exploration
+  - Train/test split configuration
+  
+  **Model Configuration:**
+  - Algorithm selection interface
+  - Hyperparameter tuning controls
+  - Cross-validation setup
+  - Feature selection options
+  - Model comparison framework
+  
+  **Training Process:**
+  - Real-time training progress
+  - Live metric updates
+  - Early stopping controls
+  - Resource usage monitoring
+  - Training history tracking
+  
+  **Results Analysis:**
+  - Model performance metrics
+  - Feature importance plots
+  - Confusion matrices
+  - ROC curves and precision-recall
+  - Model interpretability (SHAP)
+  
+  **Model Deployment:**
+  - Model serialization
+  - Prediction interface
+  - Batch prediction capabilities
+  - Model versioning
+  - Performance monitoring
+  
+  Show the complete ML training application.
+  ```
+  :::
+
+  :::div{label="Prediction Service"}
+  ```markdown
+  Create a Streamlit prediction service for [ML task]:
+  
+  **Model Loading:**
+  - Pre-trained model integration
+  - Model version management
+  - Multiple model support
+  - Model metadata display
+  - Performance benchmarks
+  
+  **Input Interface:**
+  - User-friendly input forms
+  - File upload for batch predictions
+  - Real-time input validation
+  - Example data provision
+  - Input history tracking
+  
+  **Prediction Results:**
+  - Clear prediction display
+  - Confidence scores
+  - Prediction explanations
+  - Result visualization
+  - Export capabilities
+  
+  **Monitoring:**
+  - Prediction logging
+  - Model performance tracking
+  - Input distribution monitoring
+  - Error rate analysis
+  - Usage analytics
+  
+  Include proper error handling and result caching.
+  ```
+  :::
+
+  :::div{label="A/B Testing Platform"}
+  ```markdown
+  Build an A/B testing platform with Streamlit:
+  
+  **Experiment Setup:**
+  - Test configuration interface
+  - Sample size calculators
+  - Randomization methods
+  - Success metrics definition
+  - Duration planning
+  
+  **Data Collection:**
+  - Event tracking integration
+  - Real-time data ingestion
+  - Data validation
+  - Participant assignment
+  - Experiment monitoring
+  
+  **Analysis Engine:**
+  - Statistical significance testing
+  - Confidence interval calculations
+  - Effect size measurement
+  - Sequential analysis
+  - Bayesian methods
+  
+  **Reporting:**
+  - Real-time results dashboard
+  - Statistical significance alerts
+  - Experiment reports
+  - Visualization of results
+  - Recommendation engine
+  
+  Show the complete A/B testing platform with statistical analysis.
+  ```
+  :::
+::
+
+### Interactive Tools
+
+::tabs
+  :::div{label="Data Explorer"}
+  ```markdown
+  Create an interactive data exploration tool:
+  
+  **Data Loading:**
+  - Multiple file format support
+  - Database connections
+  - API data fetching
+  - Large file handling
+  - Data preview and sampling
+  
+  **Exploration Features:**
+  - Automated data profiling
+  - Missing value analysis
+  - Distribution visualizations
+  - Correlation analysis
+  - Outlier detection
+  
+  **Interactive Visualizations:**
+  - Dynamic chart creation
+  - Filter and drill-down capabilities
+  - Custom plot configurations
+  - Multi-dimensional analysis
+  - Export visualizations
+  
+  **Data Transformation:**
+  - Column operations
+  - Data cleaning tools
+  - Feature engineering
+  - Data export options
+  - Transformation history
+  
+  Include comprehensive data validation and error handling.
+  ```
+  :::
+
+  :::div{label="Survey Builder"}
+  ```markdown
+  Build a survey creation and analysis tool:
+  
+  **Survey Creation:**
+  - Dynamic form builder
+  - Question type library
+  - Logic and branching rules
+  - Design customization
+  - Preview functionality
+  
+  **Data Collection:**
+  - Response tracking
+  - Real-time submissions
+  - Data validation
+  - Duplicate prevention
+  - Export options
+  
+  **Analysis Tools:**
+  - Response statistics
+  - Cross-tabulation analysis
+  - Sentiment analysis
+  - Text analytics
+  - Trend analysis
+  
+  **Reporting:**
+  - Automated reports
+  - Custom visualizations
+  - Executive summaries
+  - Comparative analysis
+  - Dashboard creation
+  
+  Show the complete survey platform with data analysis.
+  ```
+  :::
+
+\::div{label="Configuration Tool"]
+
+```markdown
+Create a configuration management tool for [specific domain]:
+
+**Configuration Interface:**
+- Parameter input forms
+- Validation rules
+- Default value management
+- Configuration templates
+- Import/export functionality
+
+**Visualization:**
+- Configuration impact analysis
+- Dependency visualization
+- Change tracking
+- Diff comparisons
+- Historical versions
+
+**Testing & Validation:**
+- Configuration testing
+- Impact simulation
+- Rollback capabilities
+- Approval workflows
+- Change notifications
+
+**Integration:**
+- API connections
+- Database updates
+- File generation
+- Deployment automation
+- Monitoring integration
+
+Include proper validation and change management.
+```
+
+\::
+::
+
+---
+
+## Best Practices Across Frameworks
+
+::callout{color="purple" icon="i-heroicons-star"}
+**Universal principles that apply to all development frameworks.**
+::
+
+### Code Quality & Maintenance
+
+::card-group{cols="2"}
+  :::card{icon="i-heroicons-document-text" title="Documentation"}
+  - Write clear docstrings and comments
+  - Maintain README files with setup instructions
+  - Document API endpoints and parameters
+  - Include usage examples and tutorials
+  :::
+
+  :::card{icon="i-heroicons-bug-ant" title="Testing"}
+  - Write unit tests for core functionality
+  - Implement integration tests for APIs
+  - Add end-to-end tests for user workflows
+  - Set up continuous integration pipelines
+  :::
+
+  :::card{icon="i-heroicons-shield-check" title="Security"}
+  - Validate all user inputs
+  - Implement proper authentication
+  - Use environment variables for secrets
+  - Follow framework security best practices
+  :::
+
+  :::card{icon="i-heroicons-bolt" title="Performance"}
+  - Optimize database queries
+  - Implement caching strategies
+  - Monitor application performance
+  - Use profiling tools to identify bottlenecks
+  :::
+::
+
+### Development Workflow
+
+::steps
+1. **Planning & Design**:br Start with clear requirements and architecture design
+2. **Iterative Development**:br Build features incrementally with regular testing
+3. **Code Review**:br Implement peer review processes for code quality
+4. **Deployment & Monitoring**:br Set up automated deployment with proper monitoring
+::
+
+---
+
+## Getting Started
+
+::alert{color="green" icon="i-heroicons-rocket-launch"}
+**Ready to start building?** Choose your framework and begin with the appropriate prompt templates. Remember to adapt these examples to your specific project needs.
+::
+
+### Quick Start Checklist
+
+::list{icon="i-heroicons-check"}
+- Identify your project requirements and constraints
+- Choose the appropriate framework for your use case
+- Start with a basic project setup prompt
+- Iterate with specific feature implementation prompts
+- Apply best practices for code quality and security
+- Set up proper testing and deployment workflows
+::
+
+::card
+---
+color: blue
+icon: i-heroicons-chat-bubble-left-right
+title: Need Help?
+---
+These prompts are starting points. Feel free to modify them based on your specific requirements, and don't hesitate to break complex tasks into smaller, more manageable prompts.
+
+**Pro Tip:** Combine multiple prompts for complex applications, building one feature at a time.
+::
+
+
+# Github
+
+::hero
+---
+navigation:
+  icon: simple-icons--github"
+description: Learn how to connect your CodinIT projects to GitHub for version
+  control, collaboration, and deployment. This guide covers setup, syncing, and
+  best practices.
+title: GitHub
+---
+::
+
+::callout{color="blue" icon="i-heroicons-information-circle"}
+**TL;DR:** Git is a version control system that tracks changes in your code. GitHub is the industry-standard platform for hosting Git repositories, essential for both solo builders and teams using CodinIT.
+::
+
+## Overview
+
+Integrating GitHub into your CodinIT project ensures you have full version control, collaboration tools, and code portability throughout your app's lifecycle.
+
+::card-group
+  :::card{icon="i-heroicons-clock" title="Version Control"}
+  Track every change with complete Git history and the ability to roll back to any previous state.
+  :::
+
+  :::card{icon="i-heroicons-users" title="Team Collaboration"}
+  Enable developers and contributors to work together using familiar GitHub workflows.
+  :::
+
+  :::card{icon="i-heroicons-arrow-path" title="Real-time Sync"}
+  Automatic bidirectional sync between CodinIT editor and GitHub repository.
+  :::
+
+  :::card{icon="i-heroicons-rocket-launch" title="Deployment Freedom"}
+  Host your app anywhere while maintaining the connection to CodinIT's development tools.
+  :::
+::
+
+### What is GitHub?
+
+::tabs
+  :::div{label="Git"}
+  **Git** is a version control system that tracks changes in your code, allowing you to:
+  
+  - Save snapshots of your project at different points in time
+  - Compare changes between versions
+  - Collaborate with multiple developers
+  - Revert to previous versions when needed
+  :::
+
+  :::div{label="GitHub"}
+  **GitHub** is the industry-standard platform for hosting Git repositories, providing:
+  
+  - Cloud storage for your code repositories
+  - Collaboration tools like pull requests and issues
+  - CI/CD integration through GitHub Actions
+  - Project management features
+  :::
+
+  :::div{label="Integration"}
+  **CodinIT + GitHub** combines the best of both worlds:
+  
+  - AI-powered development in CodinIT
+  - Professional version control with GitHub
+  - Seamless sync between both platforms
+  - Complete code ownership and portability
+  :::
+::
+
+## Key Benefits
+
+::alert{color="green" icon="i-heroicons-shield-check"}
+**GitHub integration brings transparency, safety, and flexibility to your development process.**
+::
+
+### Version History & Backup
+
+::code-group
+```bash [Git History]
+git log --oneline
+a1b2c3d Add user authentication
+e4f5g6h Fix signup form validation
+i7j8k9l Update landing page design
+```
+
+```json [Backup Status]
+{
+  "status": "backed_up",
+  "last_sync": "2025-06-16T10:30:00Z",
+  "commits_synced": 47,
+  "backup_location": "github.com/username/project"
+}
+```
+::
+
+All your code is tracked with Git, providing an external backup and complete change history.
+
+### Team Collaboration
+
+::steps
+1. **Code Review Process**:br Team members can review changes via GitHub pull requests before they're merged.
+2. **Issue Tracking**:br Use GitHub Issues to track bugs, features, and tasks with full project visibility.
+3. **Transparent History**:br Non-technical stakeholders can see exactly what changed and when.
+::
+
+### Real-Time Sync
+
+::callout{color="emerald" icon="i-heroicons-arrow-path"}
+**Bidirectional Sync:** Changes flow seamlessly between CodinIT and GitHub in both directions.
+::
+
+::code-group
+```mermaid [Sync Flow]
+graph LR
+    A[CodinIT Editor] <-->|Real-time| B[GitHub Repository]
+    B --> C[Your Local IDE]
+    B --> D[GitHub Actions]
+    B --> E[Deployment]
+```
+
+```bash [Example Sync]
+# Push from local IDE
+git push origin main
+# → Automatically appears in CodinIT
+
+# Edit in CodinIT
+# → Automatically pushed to GitHub
+```
+::
+
+### Workflow Integration
+
+::card-group{cols="2"}
+  :::card{icon="i-heroicons-git-branch" title="Branching Strategy"}
+  Use GitHub's branching features alongside CodinIT for organized development.
+  :::
+
+  :::card{icon="i-heroicons-play" title="CI/CD Pipeline"}
+  Set up automated testing and deployment with GitHub Actions.
+  :::
+
+  :::card{icon="i-heroicons-chat-bubble-left-right" title="Code Reviews"}
+  Maintain code quality with pull request reviews and discussions.
+  :::
+
+  :::card{icon="i-heroicons-bug-ant" title="Issue Tracking"}
+  Track bugs and feature requests with GitHub's project management tools.
+  :::
+::
+
+## Setup Guide
+
+::alert{color="amber" icon="i-heroicons-clock"}
+**Setup Time:** Approximately 5-10 minutes for first-time setup
+::
+
+::steps
+### 1. Initiate GitHub Connection
+
+In the CodinIT editor, click on **GitHub → Connect to GitHub** (usually found in the top-right corner of the project editor).
+
+  :::callout{icon="i-heroicons-arrow-top-right-on-square"}
+  This will redirect you to GitHub for authorization.
+  :::
+
+### 2. Authorize CodinIT on GitHub
+
+You'll be redirected to GitHub to authorize the CodinIT GitHub App:
+
+  :::tabs
+    ::::div{label="All Repositories"}
+    **Recommended for ease of use**
+    
+    Grants CodinIT access to create repositories in any of your accounts or organizations.
+    ::::
+  
+    ::::div{label="Selected Repositories"}
+    **More restrictive option**
+    
+    Choose specific repositories where CodinIT can operate. You can always modify this later.
+    ::::
+  :::
+
+### 3. Select GitHub Account/Organization
+
+  :::alert{color="yellow" icon="i-heroicons-exclamation-triangle"}
+  **Important:** You can only connect one GitHub account per CodinIT account at a time.
+  :::
+
+If your GitHub user belongs to organizations:
+
+- Choose between personal GitHub or organization accounts
+- Ensure you have admin access for organization repositories
+- Repository will be created under the selected account
+
+### 4. Create the Repository
+
+Once GitHub is connected:
+
+  :::code-group
+  ```bash [Automatic Process]
+  1. Click "Create Repository" button
+  2. CodinIT creates new GitHub repo
+  3. Initial code push (few seconds)
+  4. Sync established ✅
+  ```
+  
+  ```json [Repository Structure]
+  {
+    "name": "my-CodinIT-project",
+    "visibility": "private",
+    "default_branch": "main",
+    "files": [
+      "package.json",
+      "src/",
+      "public/",
+      "README.md"
+    ]
+  }
+  ```
+  :::
+
+### 5. Verify the Link
+
+\::badge{variant="solid" color="green"}Connected::
+
+Check your GitHub account for the new repository containing all your CodinIT app code.
+\::
+
+## How Syncing Works
+
+  :::callout{color="blue" icon="i-heroicons-information-circle"}
+  **Key Concept:** CodinIT and GitHub maintain a real-time, bidirectional sync of your codebase.
+  :::
+
+### Default Branch Sync Only
+
+  :::alert{color="purple" icon="i-heroicons-git-branch"}
+  **Important:** CodinIT currently tracks only the **default branch** of your GitHub repository (typically `main` or `master`).
+  :::
+
+  :::tabs
+    ::::div{label="Supported"}
+    ```bash
+    # ✅ These changes sync with CodinIT
+    git checkout main
+    git commit -m "Add new feature"
+    git push origin main
+    ```
+    ::::
+  
+    ::::div{label="Not Supported"}
+    ```bash
+    # ❌ These changes don't sync until merged
+    git checkout feature/new-component
+    git commit -m "Work in progress"
+    git push origin feature/new-component
+    ```
+    ::::
+  
+    ::::div{label="Workflow"}
+    ```bash
+    # ✅ Proper workflow
+    git checkout feature/new-component
+    # ... make changes ...
+    git push origin feature/new-component
+    # Create PR and merge to main
+    # Now changes appear in CodinIT!
+    ```
+    ::::
+  :::
+
+### Real-Time Updates
+
+  :::code-group
+  ```mermaid [GitHub → CodinIT]
+  sequenceDiagram
+      participant Dev as Developer
+      participant GH as GitHub
+      participant LV as CodinIT
+      
+      Dev->>GH: git push origin main
+      GH->>LV: Webhook notification
+      LV->>GH: Fetch latest changes
+      LV->>LV: Update editor
+  ```
+  
+  ```mermaid [CodinIT → GitHub]
+  sequenceDiagram
+      participant User as User
+      participant LV as CodinIT
+      participant GH as GitHub
+      
+      User->>LV: Edit code/AI generates
+      LV->>LV: Process changes
+      LV->>GH: Auto-commit & push
+      GH->>GH: Update repository
+  ```
+  :::
+
+### Conflict Handling
+
+  :::alert{color="red" icon="i-heroicons-exclamation-triangle"}
+  **Rare but possible:** Git conflicts can occur when both CodinIT and GitHub change the same code simultaneously.
+  :::
+
+  :::steps
+  1. **Identify Conflict**:br Git will flag conflicting changes that can't be automatically merged.
+  2. **Resolve Manually**:br Use GitHub's interface or local tools to resolve conflicts.
+  3. **Commit Resolution**:br Push the resolved code back to the default branch.
+  4. **Automatic Sync**:br CodinIT will pull the resolved code automatically.
+  :::
+
+## Importing Existing Repositories
+
+  :::callout{color="amber" icon="i-heroicons-wrench-screwdriver"}
+  **Coming Soon:** Direct import of existing repositories is planned for future updates.
+  :::
+
+### Current Workarounds
+
+  :::tabs
+    ::::div{label="Manual Import"}
+      :::::steps
+      1. Create new CodinIT project and connect to GitHub
+      2. Clone the new (empty) repository locally
+      3. Copy your existing code into the cloned repo
+      4. Commit and push to the default branch
+      5. CodinIT will sync the imported code automatically
+      :::::
+    ::::
+  
+    ::::div{label="Copy-Paste Method"}
+    For smaller projects:
+    
+      :::::code-group
+      ```bash [Terminal]
+      # Copy individual files
+      cp -r old-project/src new-project/src
+      cp old-project/package.json new-project/
+      ```
+      
+      ```javascript [CodinIT Editor]
+      // Or paste code directly in CodinIT
+      // Use AI to help restructure if needed
+      ```
+      :::::
+    ::::
+  :::
+
+## Parallel Development
+
+  :::hero
+  ---
+  description: Use CodinIT's AI alongside your favorite development tools
+  title: Work Your Way
+  ---
+  :::
+
+### Development Options
+
+  :::card-group{cols="3"}
+    ::::card{icon="i-heroicons-code-bracket" title="CodinIT Editor"}
+    Use AI-powered development and visual tools for rapid prototyping.
+    
+      :::::badge{color="green" variant="outline"}
+      AI-Powered
+      :::::
+    ::::
+  
+    ::::card{icon="i-heroicons-computer-desktop" title="Local IDE"}
+    Full IDE experience with debugging, extensions, and advanced tooling.
+    
+      :::::badge{color="blue" variant="outline"}
+      Professional
+      :::::
+    ::::
+  
+    ::::card{icon="i-heroicons-cloud" title="GitHub Codespaces"}
+    Cloud-based development environment with full GitHub integration.
+    
+      :::::badge{color="purple" variant="outline"}
+      Cloud-Based
+      :::::
+    ::::
+  :::
+
+### Example Workflows
+
+  :::tabs
+    ::::div{label="Hybrid Development"}
+    ```mermaid
+    flowchart TD
+        A[Founder uses CodinIT AI] --> B[Scaffolds new feature]
+        B --> C[Developer refines in IDE]
+        C --> D[Code review on GitHub]
+        D --> E[Merge to main]
+        E --> F[Auto-sync to CodinIT]
+        F --> G[Deploy via GitHub Actions]
+    ```
+    ::::
+  
+    ::::div{label="Team Collaboration"}
+    ```mermaid
+    flowchart LR
+        A[Designer] --> B[CodinIT Prototyping]
+        C[Frontend Dev] --> D[Local IDE]
+        E[Backend Dev] --> F[GitHub Codespaces]
+        B --> G[GitHub Repository]
+        D --> G
+        F --> G
+        G --> H[Continuous Integration]
+        H --> I[Deployment]
+    ```
+    ::::
+  :::
+
+### GitHub Workflows
+
+  :::code-group
+  ```yaml [CI/CD Example]
+  name: Deploy
+  on:
+    push:
+      branches: [main]
+  jobs:
+    deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: Deploy to Vercel
+          run: vercel --prod
+  ```
+  
+  ```yaml [Testing Pipeline]
+  name: Tests
+  on:
+    pull_request:
+      branches: [main]
+  jobs:
+    test:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: Run Tests
+          run: npm test
+  ```
+  :::
+
+## Version Management
+
+### Commit Best Practices
+
+  :::code-group
+  ```bash [Good Examples]
+  git commit -m "feat: add user authentication system"
+  git commit -m "fix: resolve signup form validation bug"
+  git commit -m "docs: update GitHub integration guide"
+  git commit -m "refactor: optimize database queries"
+  ```
+  
+  ```bash [Bad Examples]
+  git commit -m "update code"
+  git commit -m "fixes"
+  git commit -m "work"
+  git commit -m "asdf"
+  ```
+  :::
+
+### Rollback Options
+
+  :::tabs
+    ::::div{label="CodinIT Rollback"}
+      :::::steps
+      1. Open version history in CodinIT editor
+      2. Browse previous project states
+      3. Click to restore any previous version
+      4. Changes sync automatically to GitHub
+      :::::
+    
+    \::badge{variant="solid" color="green"}Beginner-Friendly::
+    \::
+    
+      :::::div{label="Git Revert"}
+      ```bash
+      # Revert specific commit
+      git revert abc123
+      git push origin main
+      
+      # Revert to specific point
+      git reset --hard abc123
+      git push --force-with-lease origin main
+      ```
+      
+      \::badge{variant="solid" color="blue"}Developer Tool::
+      :::::
+    ::::
+  
+    ::::div{label="GitHub Interface"}
+      :::::steps
+      1. Navigate to commit history on GitHub
+      2. Click "Revert" button on problematic commit
+      3. Create revert pull request
+      4. Merge to apply the revert
+      :::::
+    
+    \::badge{variant="solid" color="purple"}Web-Based::
+    \::
+    ::::
+  :::
+
+## Troubleshooting & FAQ
+
+Check these common issues:
+
+- **Branch**: Ensure you're pushing to the default branch (`main` or `master`)
+- **Push Status**: Verify commits were successfully pushed to GitHub
+- **Timing**: Wait 10-30 seconds for automatic sync
+- **Refresh**: Try refreshing the CodinIT editor
+
+  :::code-group
+  ```bash [Check Status]
+  git status
+  git log --oneline -5
+  git remote -v
+  ```
+  
+  ```bash [Force Sync]
+  git push origin main --force-with-lease
+  # Then refresh CodinIT editor
+  ```
+  :::
+::
+
+\::
+
+::steps
+1. Go to your GitHub repository
+2. Navigate to **Settings → General**
+3. Find "Default branch" section
+4. Click "Switch to another branch"
+5. Select your desired branch
+6. CodinIT will automatically start syncing with the new default
+::
+
+::alert{color="yellow" icon="i-heroicons-exclamation-triangle"}
+**Warning:** Switching default branches will change what code appears in CodinIT immediately.
+::
+
+CodinIT uses **GitHub webhooks** for real-time notifications:
+
+```json
+{
+  "event": "push",
+  "branch": "main",
+  "commits": [
+    {
+      "id": "abc123",
+      "message": "Add new feature",
+      "timestamp": "2025-06-16T10:30:00Z"
+    }
+  ]
+}
+```
+
+When you push to the default branch, GitHub automatically notifies CodinIT, which then pulls the latest changes.
+
+\::badge{variant="solid" color="green"}Yes, absolutely!::
+
+Once connected to GitHub, you have full code ownership and can:
+
+::list{icon="i-heroicons-check"}
+- Deploy to any hosting platform (Vercel, Netlify, AWS, etc.)
+- Set up your own CI/CD pipelines
+- Continue editing in CodinIT while hosting elsewhere
+- Maintain complete control of your codebase
+- Export and modify code as needed
+::
+
+::code-group
+```bash [Vercel Deployment]
+npm i -g vercel
+vercel --prod
+```
+
+```bash [Netlify Deployment]
+npm run build
+netlify deploy --prod --dir=dist
+```
+
+```yaml [AWS CloudFormation]
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      WebsiteConfiguration:
+        IndexDocument: index.html
+```
+::
+
+\::
+
+---
+
+::card{color="primary" icon="i-heroicons-rocket-launch"}
+**Ready to Get Started?**
+
+By following this guide, you'll combine the speed of AI-assisted development with the reliability and control of traditional software practices. This integration is designed to be approachable for non-technical users while providing all the power that developers expect in a modern toolchain.
+
+\#[Get Started](https://docs.codinit.dev/#setup-guide){.font-semibold}
+::
+
+::callout{color="red" icon="i-heroicons-heart"}
+**Happy coding!** 🚀
+::
+
+
+# Anthropic
+
+Learn how to configure and use Anthropic Claude models with CodinIT. Covers API key setup, model selection, and advanced features like prompt caching.
+
+::callout{color="primary"}
+<https://www.anthropic.com/>{rel="nofollow"}
+::
+
+## Getting an API Key
+
+::steps{level="3"}
+### Sign Up/Sign In
+
+Go to the [Anthropic Console](https://console.anthropic.com/){rel="nofollow"}. Create an account or sign in.
+
+### Navigate to API Keys
+
+Go to the [API keys](https://console.anthropic.com/settings/keys){rel="nofollow"} section.
+
+### Create a Key
+
+Click "Create Key". Give your key a descriptive name (e.g., "CodinIT").
+
+### Copy the Key
+
+**Important:** Copy the API key *immediately*. You will not be able to see it again. Store it securely.
+::
+
+## Supported Models
+
+CodinIT supports the following Anthropic Claude models:
+
+| Model                                 | Description                           |
+| ------------------------------------- | ------------------------------------- |
+| `claude-opus-4-20250514`              | Latest Opus model                     |
+| `claude-opus-4-20250514:thinking`     | Extended Thinking variant             |
+| `claude-sonnet-4-20250514`            | **Recommended** - Latest Sonnet model |
+| `claude-sonnet-4-20250514:thinking`   | Extended Thinking variant             |
+| `claude-3-7-sonnet-20250219`          | Claude 3.7 Sonnet                     |
+| `claude-3-7-sonnet-20250219:thinking` | Extended Thinking variant             |
+| `claude-3-5-sonnet-20241022`          | Claude 3.5 Sonnet                     |
+| `claude-3-5-haiku-20241022`           | Claude 3.5 Haiku                      |
+| `claude-3-opus-20240229`              | Claude 3 Opus                         |
+| `claude-3-haiku-20240307`             | Claude 3 Haiku                        |
+
+::tip
+See [Anthropic's Model Documentation](https://docs.anthropic.com/en/docs/about-claude/models){rel="nofollow"} for more details on each model's capabilities.
+::
+
+## Configuration in CodinIT
+
+::steps{level="3"}
+### Open CodinIT Settings
+
+Click the settings icon (⚙️) in the CodinIT panel.
+
+### Select Provider
+
+Choose "Anthropic" from the "API Provider" dropdown.
+
+### Enter API Key
+
+Paste your Anthropic API key into the "Anthropic API Key" field.
+
+### Select Model
+
+Choose your desired Claude model from the "Model" dropdown.
+
+### Optional: Custom Base URL
+
+If you need to use a custom base URL for the Anthropic API, check "Use custom base URL" and enter the URL. Most users won't need to adjust this setting.
+::
+
+## Extended Thinking
+
+Anthropic models offer an "Extended Thinking" feature, designed to give them enhanced reasoning capabilities for complex tasks. This feature allows the model to output its step-by-step thought process before delivering a final answer, providing transparency and enabling more thorough analysis for challenging prompts.
+
+::callout{color="green"}
+When extended thinking is enabled in CodinIT, the model generates `thinking` content blocks that detail its internal reasoning. These insights are then incorporated into its final response.
+::
+
+CodinIT users can leverage this by checking the `Enable Extended Thinking` box below the model selection menu after selecting a Claude Model from any provider.
+
+### Key Aspects of Extended Thinking
+
+::field-group
+  :::field{name="Supported Models" type="feature"}
+  Available for select models, including variants of Claude Opus 4, Claude Sonnet 4, and Claude Sonnet 3.7. Models with the `:thinking` suffix are pre-configured in CodinIT.
+  :::
+
+  :::field{name="Summarized Thinking (Claude 4)" type="feature"}
+  For Claude 4 models, the API returns a summary of the full thinking process to balance insight with efficiency. You are billed for the full thinking tokens, not just the summary.
+  :::
+
+  :::field{name="Streaming" type="feature"}
+  Extended thinking responses, including the `thinking` blocks, can be streamed.
+  :::
+
+  :::field{name="Tool Use & Prompt Caching" type="feature"}
+  Extended thinking interacts with tool use and prompt caching with specific behaviors around cache invalidation and context.
+  :::
+::
+
+::tip
+For comprehensive details on how extended thinking works, including API examples, interaction with tool use, prompt caching, and pricing, please refer to the [official Anthropic documentation on Extended Thinking](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking){rel="nofollow"}.
+::
+
+## Tips and Notes
+
+::card-group
+  :::card{icon="i-lucide-refresh-cw" title="Prompt Caching"}
+  Claude 3 models support [prompt caching](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching){rel="nofollow"}, which can significantly reduce costs and latency for repeated prompts.
+  :::
+
+  :::card{icon="i-lucide-file-text" title="Context Window"}
+  Claude models have large context windows (200,000 tokens), allowing you to include significant amounts of code and context in your prompts.
+  :::
+
+  :::card{icon="i-lucide-dollar-sign" title="Pricing"}
+  Refer to the [Anthropic Pricing](https://www.anthropic.com/pricing){rel="nofollow"} page for the latest pricing information.
+  :::
+
+  :::card{icon="i-lucide-clock" title="Rate Limits"}
+  Anthropic has strict rate limits based on [usage tiers](https://docs.anthropic.com/en/api/rate-limits#requirements-to-advance-tier){rel="nofollow"}. Consider alternative providers if hitting limits frequently.
+  :::
+::
+
+
+# DeepSeek
+
+Learn how to configure and use DeepSeek models like deepseek-chat and deepseek-reasoner with CodinIT.
+
+CodinIT supports accessing models through the DeepSeek API, including `deepseek-chat` and `deepseek-reasoner`.
+
+::callout{color="primary"}
+<https://platform.deepseek.com/>{rel="nofollow"}
+::
+
+## Getting an API Key
+
+::steps{level="3"}
+### Sign Up/Sign In
+
+Go to the [DeepSeek Platform](https://platform.deepseek.com/){rel="nofollow"}. Create an account or sign in.
+
+### Navigate to API Keys
+
+Find your API keys in the [API keys](https://platform.deepseek.com/api_keys){rel="nofollow"} section of the platform.
+
+### Create a Key
+
+Click "Create new API key". Give your key a descriptive name (e.g., "CodinIT").
+
+### Copy the Key
+
+**Important:** Copy the API key *immediately*. You will not be able to see it again. Store it securely.
+::
+
+## Supported Models
+
+CodinIT supports the following DeepSeek models:
+
+| Model              | Description       | Recommended Use     |
+| ------------------ | ----------------- | ------------------- |
+| `deepseek-v3-0324` | Latest version    | **Coding tasks**    |
+| `deepseek-r1`      | Reasoning-focused | **Reasoning tasks** |
+
+## Configuration in CodinIT
+
+::steps{level="3"}
+### Open CodinIT Settings
+
+Click the ⚙️ icon in the CodinIT panel.
+
+### Select Provider
+
+Choose "DeepSeek" from the "API Provider" dropdown.
+
+### Enter API Key
+
+Paste your DeepSeek API key into the "DeepSeek API Key" field.
+
+### Select Model
+
+Choose your desired model from the "Model" dropdown.
+::
+
+## Tips and Notes
+
+::card{icon="i-lucide-dollar-sign" title="Pricing Information"}
+Refer to the [DeepSeek Pricing](https://api-docs.deepseek.com/quick_start/pricing/){rel="nofollow"} page for details on model costs and usage rates.
+::
+
+
+# Gemini
+
+> Configure GCP Vertex AI with CodinIT.dev to access leading generative AI models like Claude 4 Sonnet v2. This guide covers GCP environment setup, authentication, and secure integration for enterprise teams.
+
+### Overview
+
+**GCP Vertex AI:**:br
+A fully managed service that provides access to leading generative AI models—such as Anthropic's Claude 4 Sonnet v2—through Google Cloud. :br[Learn more about GCP Vertex AI](https://cloud.google.com/vertex-ai){ariaLabel="Learn more about GCP Vertex AI" rel="nofollow"}.
+
+This guide is tailored for organizations with established GCP environments (leveraging IAM roles, service accounts, and best practices in resource management) to ensure secure and compliant usage.
+
+---
+
+### Step 1: Prepare Your GCP Environment
+
+#### 1.1 Create or Use a GCP Project
+
+- **Sign in to the GCP Console:**:br[Google Cloud Console](https://console.cloud.google.com/){ariaLabel="Google Cloud Console" rel="nofollow"}
+- **Select or Create a Project:**:br
+  Use an existing project or create a new one dedicated to Vertex AI.
+
+#### 1.2 Set Up IAM Permissions and Service Accounts
+
+- **Assign Required Roles:**
+  - Grant your user (or service account) the **Vertex AI User** role (`roles/aiplatform.user`)
+  - For service accounts, also attach the **Vertex AI Service Agent** role (`roles/aiplatform.serviceAgent`) to enable certain operations
+  - Consider additional predefined roles as needed:
+
+    - Vertex AI Platform Express Admin
+    - Vertex AI Platform Express User
+    - Vertex AI Migration Service User
+- **Cross-Project Resource Access:**
+  - For BigQuery tables in different projects, assign the **BigQuery Data Viewer** role
+  - For Cloud Storage buckets in different projects, assign the **Storage Object Viewer** role
+  - For external data sources, refer to the [GCP Vertex AI Access Control documentation](https://cloud.google.com/vertex-ai/docs/general/access-control){ariaLabel="GCP Vertex AI Access Control documentation" rel="nofollow"}
+
+---
+
+### Step 2: Verify Regional and Model Access
+
+#### 2.1 Choose and Confirm a Region
+
+Vertex AI supports multiple regions. Select a region that meets your latency, compliance, and capacity needs. Examples include:
+
+- **us-east5 (Columbus, Ohio)**
+- **us-central1 (Iowa)**
+- **europe-west1 (Belgium)**
+- **europe-west4 (Netherlands)**
+- **asia-southeast1 (Singapore)**
+- **global (Global)**
+
+The Global endpoint may offer higher availability and reduce resource exhausted errors. Only Gemini models are supported.
+
+#### 2.2 Enable the Claude 4 Sonnet v2 Model
+
+- **Open Vertex AI Model Garden:**:br
+  In the Cloud Console, navigate to **Vertex AI → Model Garden**
+- **Enable Claude 4 Sonnet v2:**:br
+  Locate the model card for Claude 4 Sonnet v2 and click **Enable**
+
+---
+
+### Step 3: Configure the CodinIT.dev VS Code Extension
+
+#### 3.1 Install and Open CodinIT.dev
+
+- **Download VS Code:**:br[Download Visual Studio Code](https://code.visualstudio.com/){ariaLabel="Download Visual Studio Code" rel="nofollow"}
+- **Install the CodinIT.dev Extension:**
+  - Open VS Code
+  - Navigate to the Extensions Marketplace (Ctrl+Shift+X or Cmd+Shift+X)
+  - Search for **CodinIT.dev** and install the extension
+
+![CodinIT.dev extension in VS Code](https://storage.googleapis.com/CodinIT.dev_public_images/docs/assets/CodinIT.dev-extension-arrow.png)
+
+#### 3.2 Configure CodinIT.dev Settings
+
+- **Open CodinIT.dev Settings:**:br
+  Click the settings ⚙️ icon within the CodinIT.dev extension
+- **Set API Provider:**:br
+  Choose **GCP Vertex AI** from the API Provider dropdown
+- **Enter Your Google Cloud Project ID:**:br
+  Provide the project ID you set up earlier
+- **Select the Region:**:br
+  Choose one of the supported regions (e.g., `us-east5`)
+- **Select the Model:**:br
+  From the available list, choose **Claude 4 Sonnet v2**
+- **Save and Test:**:br
+  Save your settings and test by sending a simple prompt (e.g., "Generate a Python function to check if a number is prime.")
+
+---
+
+### Step 4: Authentication and Credentials Setup
+
+#### Option A: Using Your Google Account (User Credentials)
+
+1. **Install the Google Cloud CLI:**:br
+   Follow the [installation guide](https://cloud.google.com/sdk/docs/install){ariaLabel="Google Cloud CLI installation guide" rel="nofollow"}
+2. **Initialize and Authenticate:**
+   ```bash
+   gcloud init
+   gcloud auth application-default login
+   ```
+   - This sets up Application Default Credentials (ADC) using your Google account
+3. **Restart VS Code:**:br
+   Ensure VS Code is restarted so that the CodinIT.dev extension picks up the new credentials
+
+#### Option B: Using a Service Account (JSON Key)
+
+1. **Create a Service Account:**
+   - In the GCP Console, navigate to **IAM & Admin > Service Accounts**
+   - Create a new service account (e.g., "vertex-ai-client")
+2. **Assign Roles:**
+   - Attach **Vertex AI User** (`roles/aiplatform.user`)
+   - Attach **Vertex AI Service Agent** (`roles/aiplatform.serviceAgent`)
+   - Optionally, add other roles as required
+3. **Generate a JSON Key:**
+   - In the Service Accounts section, manage keys for your service account and download the JSON key
+4. **Set the Environment Variable:**
+   ```bash
+   export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-key.json"
+   ```
+   - This instructs Google Cloud client libraries (and CodinIT.dev) to use this key
+5. **Restart VS Code:**:br
+   Launch VS Code from a terminal where the `GOOGLE_APPLICATION_CREDENTIALS` variable is set
+
+---
+
+### Step 5: Security, Monitoring, and Best Practices
+
+#### 5.1 Enforce Least Privilege
+
+- **Principle of Least Privilege:**:br
+  Only grant the minimum necessary permissions. Custom roles can offer finer control compared to broad predefined roles
+- **Best Practices:**:br
+  Refer to [GCP IAM Best Practices](https://cloud.google.com/iam/docs/best-practices){ariaLabel="GCP IAM Best Practices" rel="nofollow"}
+
+#### 5.2 Manage Resource Access
+
+- **Project vs. Resource-Level Access:**:br
+  Access can be managed at both levels. Note that resource-level permissions (e.g., for BigQuery or Cloud Storage) add to, but do not override, project-level policies
+
+#### 5.3 Monitor Usage and Quotas
+
+- **Model Observability Dashboard:**
+  - In the Vertex AI Console, navigate to the **Model Observability** dashboard
+  - Monitor metrics suchs as request throughput, latency, and error rates (including 429 quota errors)
+- **Quota Management:**
+  - If you encounter 429 errors, check the **IAM & Admin > Quotas** page
+  - Request a quota increase if necessary :br[Learn more about GCP Vertex AI Quotas](https://cloud.google.com/vertex-ai/docs/quotas){ariaLabel="Learn more about GCP Vertex AI Quotas" rel="nofollow"}
+
+#### 5.4 Service Agents and Cross-Project Considerations
+
+- **Service Agents:**:br
+  Be aware of the different service agents:
+  - Vertex AI Service Agent
+  - Vertex AI RAG Data Service Agent
+  - Vertex AI Custom Code Service Agent
+  - Vertex AI Extension Service Agent
+- **Cross-Project Access:**:br
+  For resources in other projects (e.g., BigQuery, Cloud Storage), ensure that the appropriate roles (BigQuery Data Viewer, Storage Object Viewer) are assigned
+
+---
+
+### Conclusion
+
+By following these steps, your enterprise team can securely integrate GCP Vertex AI with the CodinIT.dev VS Code extension to harness the power of **Claude 4 Sonnet v2**:
+
+- **Prepare Your GCP Environment:**:br
+  Create or use a project, configure IAM with least privilege, and ensure necessary roles (including the Vertex AI Service Agent role) are attached
+- **Verify Regional and Model Access:**:br
+  Confirm that your chosen region supports Claude 4 Sonnet v2 and that the model is enabled
+- **Configure CodinIT.dev in VS Code:**:br
+  Install CodinIT.dev, enter your project ID, select the appropriate region, and choose the model
+- **Set Up Authentication:**:br
+  Use either user credentials (via `gcloud auth application-default login`) or a service account with a JSON key
+- **Implement Security and Monitoring:**:br
+  Adhere to best practices for IAM, manage resource access carefully, and monitor usage with the Model Observability dashboard
+
+For further details, please consult the [GCP Vertex AI Documentation](https://cloud.google.com/vertex-ai/docs){ariaLabel="GCP Vertex AI Documentation" rel="nofollow"} and your internal security policies. :br
+Happy coding!
+
+*This guide will be updated as GCP Vertex AI and CodinIT.dev evolve. Always refer to the latest documentation for current practices.*
+
+
+# xAI Groq
+
+> Learn how to configure and use xAI's Grok models with CodinIT.dev, including API key setup, supported models, and reasoning capabilities.
+
+xAI is the company behind Grok, a large language model known for its conversational abilities and large context window. Grok models are designed to provide helpful, informative, and contextually relevant responses.
+
+**Website:** <https://x.ai/>{ariaLabel="xAI Website" rel="nofollow"}
+
+### Getting an API Key
+
+1. **Sign Up/Sign In:** Go to the [xAI Console](https://console.x.ai/){ariaLabel="xAI Console" rel="nofollow"}. Create an account or sign in.
+2. **Navigate to API Keys:** Go to the API keys section in your dashboard.
+3. **Create a Key:** Click to create a new API key. Give your key a descriptive name (e.g., "CodinIT.dev").
+4. **Copy the Key:** &#x2A;*Important:** Copy the API key *immediately*. You will not be able to see it again. Store it securely.
+
+### Supported Models
+
+CodinIT.dev supports the following xAI Grok models:
+
+#### Grok-3 Models
+
+- `grok-3-beta` (Default) - xAI's Grok-3 beta model with 131K context window
+- `grok-3-fast-beta` - xAI's Grok-3 fast beta model with 131K context window
+- `grok-3-mini-beta` - xAI's Grok-3 mini beta model with 131K context window
+- `grok-3-mini-fast-beta` - xAI's Grok-3 mini fast beta model with 131K context window
+
+#### Grok-2 Models
+
+- `grok-2-latest` - xAI's Grok-2 model - latest version with 131K context window
+- `grok-2` - xAI's Grok-2 model with 131K context window
+- `grok-2-1212` - xAI's Grok-2 model (version 1212) with 131K context window
+
+#### Grok Vision Models
+
+- `grok-2-vision-latest` - xAI's Grok-2 Vision model - latest version with image support and 32K context window
+- `grok-2-vision` - xAI's Grok-2 Vision model with image support and 32K context window
+- `grok-2-vision-1212` - xAI's Grok-2 Vision model (version 1212) with image support and 32K context window
+- `grok-vision-beta` - xAI's Grok Vision Beta model with image support and 8K context window
+
+#### Legacy Models
+
+- `grok-beta` - xAI's Grok Beta model (legacy) with 131K context window
+
+### Configuration in CodinIT.dev
+
+1. **Open CodinIT.dev Settings:** Click the settings icon (⚙️) in the CodinIT.dev panel.
+2. **Select Provider:** Choose "xAI" from the "API Provider" dropdown.
+3. **Enter API Key:** Paste your xAI API key into the "xAI API Key" field.
+4. **Select Model:** Choose your desired Grok model from the "Model" dropdown.
+
+### Reasoning Capabilities
+
+Grok 3 Mini models feature specialized reasoning capabilities, allowing them to "think before responding" - particularly useful for complex problem-solving tasks.
+
+#### Reasoning-Enabled Models
+
+Reasoning is only supported by:
+
+- `grok-3-mini-beta`
+- `grok-3-mini-fast-beta`
+
+The Grok 3 models `grok-3-beta` and `grok-3-fast-beta` do not support reasoning.
+
+#### Controlling Reasoning Effort
+
+When using reasoning-enabled models, you can control how hard the model thinks with the `reasoning_effort` parameter:
+
+- `low`: Minimal thinking time, using fewer tokens for quick responses
+- `high`: Maximum thinking time, leveraging more tokens for complex problems
+
+Choose `low` for simple queries that should complete quickly, and `high` for harder problems where response latency is less important.
+
+#### Key Features
+
+- **Step-by-Step Problem Solving**: The model thinks through problems methodically before delivering an answer
+- **Math & Quantitative Strength**: Excels at numerical challenges and logic puzzles
+- **Reasoning Trace Access**: The model's thinking process is available via the `reasoning_content` field in the response completion object
+
+### Tips and Notes
+
+- **Context Window:** Most Grok models feature large context windows (up to 131K tokens), allowing you to include substantial amounts of code and context in your prompts.
+- **Vision Capabilities:** Select vision-enabled models (`grok-2-vision-latest`, `grok-2-vision`, etc.) when you need to process or analyze images.
+- **Pricing:** Pricing varies by model, with input costs ranging from $0.3 to $5.0 per million tokens and output costs from $0.5 to $25.0 per million tokens. Refer to the xAI documentation for the most current pricing information.
+- **Performance Tradeoffs:** "Fast" variants typically offer quicker response times but may have higher costs, while "mini" variants are more economical but may have reduced capabilities.
+
+
+# Mistral
+
+Connect Mistral AI's sophisticated models to CodinIT.dev for precise, efficient app development.
+
+::callout{icon="i-lucide-sparkles"}
+**Mistral AI Precision** - Experience French AI excellence with Mistral's models known for precise instruction following, exceptional coding capabilities, and efficient performance.
+::
+
+## Why Choose Mistral for Development?
+
+::card-group
+  :::card{icon="i-lucide-code" title="Coding Specialist"}
+  Codestral model specifically designed for software development tasks.
+  :::
+
+  :::card{icon="i-lucide-target" title="Precise Instructions"}
+  Exceptional accuracy in following detailed technical specifications.
+  :::
+
+  :::card{icon="i-lucide-zap" title="Efficient Performance"}
+  High-quality outputs with optimized token usage and speed.
+  :::
+
+  :::card{icon="i-lucide-globe" title="Multilingual Excellence"}
+  Superior support for multiple programming languages and human languages.
+  :::
+::
+
+## Available Mistral Models
+
+| Model             | Type    | Strengths           | Best For             | Context |
+| ----------------- | ------- | ------------------- | -------------------- | ------- |
+| **Mistral Large** | General | Advanced reasoning  | Complex applications | 128k    |
+| **Codestral**     | Coding  | Code specialization | Software development | 32k     |
+| **Mixtral 8x7b**  | General | High throughput     | High-volume usage    | 32k     |
+| **Mistral 7b**    | General | Fast responses      | Quick iterations     | 32k     |
+
+## API Key Setup
+
+::steps
+### Create Mistral Account
+
+Visit [Mistral Console](https://console.mistral.ai/){ariaLabel="Mistral Console" rel="nofollow"} and create your developer account.
+
+### Generate API Key
+
+Navigate to the API Keys section and create a new key.
+
+### Secure Key Storage
+
+Store your API key securely in your project's environment variables.
+::
+
+## CodinIT Configuration
+
+To configure the Mistral provider in CodinIT, navigate to your project settings, select "Mistral" from the AI Provider dropdown, and enter your API key.
+
+## Development Examples
+
+### Full-Stack Application Development
+
+```typescript
+// Example: E-commerce platform with Codestral
+const prompt = `
+Create a complete e-commerce platform using Next.js and TypeScript:
+- Product catalog with search and filtering
+- Shopping cart with persistent state
+- User authentication and profiles
+`;
+```
+
+### API Development
+
+```python
+# Example: Microservices with FastAPI
+prompt = """
+Design a microservices architecture for a content management system:
+- User service with OAuth integration
+- Content service with version control
+- Media service with CDN integration
+"""
+```
+
+## Best Practices
+
+### Prompt Engineering
+
+::card-group
+  :::card{icon="i-lucide-list" title="Detailed Specifications"}
+  Provide comprehensive requirements and technical constraints.
+  :::
+
+  :::card{icon="i-lucide-layers" title="Structured Context"}
+  Organize information clearly with priorities and dependencies.
+  :::
+
+  :::card{icon="i-lucide-code" title="Code Context"}
+  Include relevant existing code patterns and architecture.
+  :::
+
+  :::card{icon="i-lucide-refresh-cw" title="Iterative Refinement"}
+  Build complex features incrementally with feedback loops.
+  :::
+::
+
+## Troubleshooting Guide
+
+### Common Issues
+
+::accordion
+  :::card{title="API Key Type Mismatch"}
+  **Resolution Steps:**
+  
+  1. Verify you're using the correct API key type for your model.
+  2. Use Codestral API key specifically for Codestral model.
+  3. Use General API key for other Mistral models.
+  :::
+
+  :::card{title="Model Access Denied"}
+  **Resolution Steps:**
+  
+  1. Verify your account has access to the selected model.
+  2. Check billing status and account standing.
+  3. Ensure API key hasn't expired or been revoked.
+  :::
+::
+
+
+# Ollama
+
+CodinIT.dev supports running models locally using Ollama. This approach offers privacy, offline access, and potentially reduced costs. It requires some initial setup and a sufficiently powerful computer. Because of the present state of consumer hardware, it's not recommended to use Ollama with CodinIT.dev as performance will likely be poor for average hardware configurations.
+
+**Website:** <https://ollama.com/>{ariaLabel="Ollama Website" rel="nofollow"}
+
+### Setting up Ollama
+
+1. **Download and Install Ollama:**
+   Obtain the Ollama installer for your operating system from the [Ollama website](https://ollama.com/){ariaLabel="Ollama Website" rel="nofollow"} and follow their installation guide. Ensure Ollama is running. You can typically start it with:
+   ```bash
+   ollama serve
+   ```
+2. **Download a Model:**
+   Ollama supports a wide variety of models. A list of available models can be found on the [Ollama model library](https://ollama.com/library){ariaLabel="Ollama Model Library" rel="nofollow"}. Some models recommended for coding tasks include:
+   - `codellama:7b-code` (a good, smaller starting point)
+   - `codellama:13b-code` (offers better quality, larger size)
+   - `codellama:34b-code` (provides even higher quality, very large)
+   - `qwen2.5-coder:32b`
+   - `mistralai/Mistral-7B-Instruct-v0.1` (a solid general-purpose model)
+   - `deepseek-coder:6.7b-base` (effective for coding)
+   - `llama3:8b-instruct-q5_1` (suitable for general tasks)
+   :brTo download a model, open your terminal and execute:
+   ```bash
+   ollama pull <model_name>
+   ```
+   :brFor instance:
+   ```bash
+   ollama pull qwen2.5-coder:32b
+   ```
+3. **Configure the Model's Context Window:**
+   By default, Ollama models often use a context window of 2048 tokens, which can be insufficient for many CodinIT.dev requests. A minimum of 12,000 tokens is advisable for decent results, with 32,000 tokens being ideal. To adjust this, you'll modify the model's parameters and save it as a new version. :br First, load the model (using `qwen2.5-coder:32b` as an example):
+   ```bash
+   ollama run qwen2.5-coder:32b
+   ```
+   :brOnce the model is loaded within the Ollama interactive session, set the context size parameter:
+   ```text
+   /set parameter num_ctx 32768
+   ```
+   :brThen, save this configured model with a new name:
+   ```text
+   /save your_custom_model_name
+   ```
+   :br(Replace `your_custom_model_name` with a name of your choice.)
+4. **Configure CodinIT.dev:**
+   - Open the CodinIT.dev sidebar (usually indicated by the CodinIT.dev icon).
+   - Click the settings gear icon (⚙️).
+   - Select "ollama" as the API Provider.
+   - Enter the Model name you saved in the previous step (e.g., `your_custom_model_name`).
+   - (Optional) Adjust the base URL if Ollama is running on a different machine or port. The default is `http://localhost:11434`.
+   - (Optional) Configure the Model context size in CodinIT.dev's Advanced settings. This helps CodinIT.dev manage its context window effectively with your customized Ollama model.
+
+### Tips and Notes
+
+- **Resource Demands:** Running large language models locally can be demanding on system resources. Ensure your computer meets the requirements for your chosen model.
+- **Model Choice:** Experiment with various models to discover which best fits your specific tasks and preferences.
+- **Offline Capability:** After downloading a model, you can use CodinIT.dev with that model even without an internet connection.
+- **Token Usage Tracking:** CodinIT.dev tracks token usage for models accessed via Ollama, allowing you to monitor consumption.
+- **Ollama's Own Documentation:** For more detailed information, consult the official [Ollama documentation](https://ollama.com/docs){ariaLabel="Ollama Documentation" rel="nofollow"}.
+
+
+# OpenAI
+
+> Learn how to configure and use official OpenAI models with CodinIT.dev.
+
+CodinIT.dev supports accessing models directly through the official OpenAI API.
+
+**Website:** <https://openai.com/>{ariaLabel="OpenAI Website" rel="nofollow"}
+
+### Getting an API Key
+
+1. **Sign Up/Sign In:** Visit the [OpenAI Platform](https://platform.openai.com/){ariaLabel="OpenAI Platform" rel="nofollow"}. You'll need to create an account or sign in if you already have one.
+2. **Navigate to API Keys:** Once logged in, go to the [API keys section](https://platform.openai.com/api-keys){ariaLabel="OpenAI API Keys Section" rel="nofollow"} of your account.
+3. **Create a Key:** Click on "Create new secret key". It's good practice to give your key a descriptive name (e.g., "CodinIT.dev API Key").
+4. **Copy the Key:** &#x2A;*Crucial:** Copy the generated API key immediately. For security reasons, OpenAI will not show it to you again. Store this key in a safe and secure location.
+
+### Supported Models
+
+CodinIT.dev is compatible with a variety of OpenAI models, including but not limited to:
+
+- 'o3'
+- `o3-mini` (medium reasoning effort)
+- 'o4-mini'
+- `o3-mini-high` (high reasoning effort)
+- `o3-mini-low` (low reasoning effort)
+- `o1`
+- `o1-preview`
+- `o1-mini`
+- `gpt-4.5-preview`
+- `gpt-4o`
+- `gpt-4o-mini`
+- 'gpt-4.1'
+- 'gpt-4.1-mini'
+
+For the most current list of available models and their capabilities, please refer to the official [OpenAI Models documentation](https://platform.openai.com/docs/models){ariaLabel="OpenAI Models Documentation" rel="nofollow"}.
+
+### Configuration in CodinIT.dev
+
+1. **Open CodinIT.dev Settings:** Click the settings gear icon (⚙️) in the CodinIT.dev panel.
+2. **Select Provider:** Choose "OpenAI" from the "API Provider" dropdown menu.
+3. **Enter API Key:** Paste your OpenAI API key into the "OpenAI API Key" field.
+4. **Select Model:** Choose your desired model from the "Model" dropdown list.
+5. **(Optional) Base URL:** If you need to use a proxy or a custom base URL for the OpenAI API, you can enter it here. Most users will not need to change this from the default.
+
+### Tips and Notes
+
+- **Pricing:** Be sure to review the [OpenAI Pricing page](https://openai.com/pricing){ariaLabel="OpenAI Pricing Page" rel="nofollow"} for detailed information on the costs associated with different models.
+- **Azure OpenAI Service:** If you are looking to use the Azure OpenAI service, please note that specific documentation for Azure OpenAI with CodinIT.dev may be found separately, or you might need to configure it as an OpenAI-compatible endpoint if such functionality is supported by CodinIT.dev for custom configurations.
+
+
+# Vertex AI
+
+> Configure GCP Vertex AI with CodinIT.dev to access leading generative AI models like Claude 4 Sonnet v2. This guide covers GCP environment setup, authentication, and secure integration for enterprise teams.
+
+### Overview
+
+**GCP Vertex AI:**:br
+A fully managed service that provides access to leading generative AI models—such as Anthropic's Claude 4 Sonnet v2—through Google Cloud. :br[Learn more about GCP Vertex AI](https://cloud.google.com/vertex-ai){rel="nofollow"}.
+
+This guide is tailored for organizations with established GCP environments (leveraging IAM roles, service accounts, and best practices in resource management) to ensure secure and compliant usage.
+
+---
+
+### Step 1: Prepare Your GCP Environment
+
+#### 1.1 Create or Use a GCP Project
+
+- **Sign in to the GCP Console:**:br[Google Cloud Console](https://console.cloud.google.com/){rel="nofollow"}
+- **Select or Create a Project:**:br
+  Use an existing project or create a new one dedicated to Vertex AI.
+
+#### 1.2 Set Up IAM Permissions and Service Accounts
+
+- **Assign Required Roles:**
+  - Grant your user (or service account) the **Vertex AI User** role (`roles/aiplatform.user`)
+  - For service accounts, also attach the **Vertex AI Service Agent** role (`roles/aiplatform.serviceAgent`) to enable certain operations
+  - Consider additional predefined roles as needed:
+
+    - Vertex AI Platform Express Admin
+    - Vertex AI Platform Express User
+    - Vertex AI Migration Service User
+- **Cross-Project Resource Access:**
+  - For BigQuery tables in different projects, assign the **BigQuery Data Viewer** role
+  - For Cloud Storage buckets in different projects, assign the **Storage Object Viewer** role
+  - For external data sources, refer to the [GCP Vertex AI Access Control documentation](https://cloud.google.com/vertex-ai/docs/general/access-control){rel="nofollow"}
+
+---
+
+### Step 2: Verify Regional and Model Access
+
+#### 2.1 Choose and Confirm a Region
+
+Vertex AI supports multiple regions. Select a region that meets your latency, compliance, and capacity needs. Examples include:
+
+- **us-east5 (Columbus, Ohio)**
+- **us-central1 (Iowa)**
+- **europe-west1 (Belgium)**
+- **europe-west4 (Netherlands)**
+- **asia-southeast1 (Singapore)**
+- **global (Global)**
+
+The Global endpoint may offer higher availability and reduce resource exhausted errors. Only Gemini models are supported.
+
+#### 2.2 Enable the Claude 4 Sonnet v2 Model
+
+- **Open Vertex AI Model Garden:**:br
+  In the Cloud Console, navigate to **Vertex AI → Model Garden**
+- **Enable Claude 4 Sonnet v2:**:br
+  Locate the model card for Claude 4 Sonnet v2 and click **Enable**
+
+---
+
+### Step 3: Configure the CodinIT.dev VS Code Extension
+
+#### 3.1 Install and Open CodinIT.dev
+
+- **Download VS Code:**:br[Download Visual Studio Code](https://code.visualstudio.com/){rel="nofollow"}
+- **Install the CodinIT.dev Extension:**
+  - Open VS Code
+  - Navigate to the Extensions Marketplace (Ctrl+Shift+X or Cmd+Shift+X)
+  - Search for **CodinIT.dev** and install the extension
+
+![CodinIT.dev extension in VS Code](https://storage.googleapis.com/CodinIT.dev_public_images/docs/assets/CodinIT.dev-extension-arrow.png)
+
+#### 3.2 Configure CodinIT.dev Settings
+
+- **Open CodinIT.dev Settings:**:br
+  Click the settings ⚙️ icon within the CodinIT.dev extension
+- **Set API Provider:**:br
+  Choose **GCP Vertex AI** from the API Provider dropdown
+- **Enter Your Google Cloud Project ID:**:br
+  Provide the project ID you set up earlier
+- **Select the Region:**:br
+  Choose one of the supported regions (e.g., `us-east5`)
+- **Select the Model:**:br
+  From the available list, choose **Claude 4 Sonnet v2**
+- **Save and Test:**:br
+  Save your settings and test by sending a simple prompt (e.g., "Generate a Python function to check if a number is prime.")
+
+---
+
+### Step 4: Authentication and Credentials Setup
+
+#### Option A: Using Your Google Account (User Credentials)
+
+1. **Install the Google Cloud CLI:**:br
+   Follow the [installation guide](https://cloud.google.com/sdk/docs/install){rel="nofollow"}
+2. **Initialize and Authenticate:**
+   ```bash
+   gcloud init
+   gcloud auth application-default login
+   ```
+   - This sets up Application Default Credentials (ADC) using your Google account
+3. **Restart VS Code:**:br
+   Ensure VS Code is restarted so that the CodinIT.dev extension picks up the new credentials
+
+#### Option B: Using a Service Account (JSON Key)
+
+1. **Create a Service Account:**
+   - In the GCP Console, navigate to **IAM & Admin > Service Accounts**
+   - Create a new service account (e.g., "vertex-ai-client")
+2. **Assign Roles:**
+   - Attach **Vertex AI User** (`roles/aiplatform.user`)
+   - Attach **Vertex AI Service Agent** (`roles/aiplatform.serviceAgent`)
+   - Optionally, add other roles as required
+3. **Generate a JSON Key:**
+   - In the Service Accounts section, manage keys for your service account and download the JSON key
+4. **Set the Environment Variable:**
+   ```bash
+   export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-key.json"
+   ```
+   - This instructs Google Cloud client libraries (and CodinIT.dev) to use this key
+5. **Restart VS Code:**:br
+   Launch VS Code from a terminal where the `GOOGLE_APPLICATION_CREDENTIALS` variable is set
+
+---
+
+### Step 5: Security, Monitoring, and Best Practices
+
+#### 5.1 Enforce Least Privilege
+
+- **Principle of Least Privilege:**:br
+  Only grant the minimum necessary permissions. Custom roles can offer finer control compared to broad predefined roles
+- **Best Practices:**:br
+  Refer to [GCP IAM Best Practices](https://cloud.google.com/iam/docs/best-practices){rel="nofollow"}
+
+#### 5.2 Manage Resource Access
+
+- **Project vs. Resource-Level Access:**:br
+  Access can be managed at both levels. Note that resource-level permissions (e.g., for BigQuery or Cloud Storage) add to, but do not override, project-level policies
+
+#### 5.3 Monitor Usage and Quotas
+
+- **Model Observability Dashboard:**
+  - In the Vertex AI Console, navigate to the **Model Observability** dashboard
+  - Monitor metrics such as request throughput, latency, and error rates (including 429 quota errors)
+- **Quota Management:**
+  - If you encounter 429 errors, check the **IAM & Admin > Quotas** page
+  - Request a quota increase if necessary :br[Learn more about GCP Vertex AI Quotas](https://cloud.google.com/vertex-ai/docs/quotas){rel="nofollow"}
+
+#### 5.4 Service Agents and Cross-Project Considerations
+
+- **Service Agents:**:br
+  Be aware of the different service agents:
+  - Vertex AI Service Agent
+  - Vertex AI RAG Data Service Agent
+  - Vertex AI Custom Code Service Agent
+  - Vertex AI Extension Service Agent
+- **Cross-Project Access:**:br
+  For resources in other projects (e.g., BigQuery, Cloud Storage), ensure that the appropriate roles (BigQuery Data Viewer, Storage Object Viewer) are assigned
+
+---
+
+### Conclusion
+
+By following these steps, your enterprise team can securely integrate GCP Vertex AI with the CodinIT.dev VS Code extension to harness the power of **Claude 4 Sonnet v2**:
+
+- **Prepare Your GCP Environment:**:br
+  Create or use a project, configure IAM with least privilege, and ensure necessary roles (including the Vertex AI Service Agent role) are attached
+- **Verify Regional and Model Access:**:br
+  Confirm that your chosen region supports Claude 4 Sonnet v2 and that the model is enabled
+- **Configure CodinIT.dev in VS Code:**:br
+  Install CodinIT.dev, enter your project ID, select the appropriate region, and choose the model
+- **Set Up Authentication:**:br
+  Use either user credentials (via `gcloud auth application-default login`) or a service account with a JSON key
+- **Implement Security and Monitoring:**:br
+  Adhere to best practices for IAM, manage resource access carefully, and monitor usage with the Model Observability dashboard
+
+For further details, please consult the [GCP Vertex AI Documentation](https://cloud.google.com/vertex-ai/docs){rel="nofollow"} and your internal security policies. :br
+Happy coding!
+
+*This guide will be updated as GCP Vertex AI and CodinIT.dev evolve. Always refer to the latest documentation for current practices.*
+
+
+# TogetherAI
+
+Learn how to connect Together AI to your CodinIT projects. Get access to the best open-source AI models with transparent pricing and fast performance.
+
+## What is Together AI?
+
+::callout{color="primary"}
+**Together AI** is a platform that provides fast, affordable access to the best open-source AI models. Instead of being locked into one company's models, you get to choose from dozens of powerful, community-built AI models with transparent pricing.
+
+Perfect for developers who want choice and value!
+::
+
+## Why Use Together AI with CodinIT?
+
+::card-group
+  :::card{icon="i-lucide-book-open" title="Open-Source Models"}
+  Access the best community-built AI models, not just proprietary ones
+  :::
+
+  :::card{icon="i-lucide-dollar-sign" title="Transparent Pricing"}
+  Clear, honest pricing with no hidden fees or surprise costs
+  :::
+
+  :::card{icon="i-lucide-zap" title="Fast Performance"}
+  High-speed inference optimized for real-world usage
+  :::
+
+  :::card{icon="i-lucide-settings" title="Model Choice"}
+  Pick the perfect model for each task instead of one-size-fits-all
+  :::
+::
+
+## Getting Your Together AI API Key
+
+::steps{level="3"}
+### Visit Together AI Platform
+
+Go to [api.together.xyz](https://api.together.xyz/){rel="nofollow"} and create an account.
+
+### Create Your API Key
+
+- Navigate to "API Keys" in your dashboard
+- Click "Create new API key"
+- Give it a name like "CodinIT"
+- Copy your new API key and save it safely
+
+### Add Billing Information
+
+Add payment information to start using the models (most have very affordable pricing).
+::
+
+## Available Models
+
+Choose from a huge selection of open-source models:
+
+### Popular Large Models (Best Quality)
+
+| Model              | Intelligence | Speed | Best For               | Cost   |
+| ------------------ | ------------ | ----- | ---------------------- | ------ |
+| **Llama 3.1 405B** | ⭐⭐⭐⭐⭐        | ⚡     | Most complex tasks     | High   |
+| **Llama 3.1 70B**  | ⭐⭐⭐⭐⭐        | ⚡⚡    | Advanced reasoning     | Medium |
+| **Qwen 2.5 72B**   | ⭐⭐⭐⭐⭐        | ⚡⚡    | Analysis and reasoning | Medium |
+
+### Fast & Efficient Models
+
+| Model            | Intelligence | Speed | Best For             | Cost |
+| ---------------- | ------------ | ----- | -------------------- | ---- |
+| **Llama 3.1 8B** | ⭐⭐⭐⭐         | ⚡⚡⚡   | Quick responses      | Low  |
+| **Mistral 7B**   | ⭐⭐⭐          | ⚡⚡⚡   | Fast conversations   | Low  |
+| **Qwen 2.5 7B**  | ⭐⭐⭐          | ⚡⚡⚡   | Efficient assistance | Low  |
+
+### Coding Specialists
+
+| Model               | Best For              | Special Features         |
+| ------------------- | --------------------- | ------------------------ |
+| **Code Llama 34B**  | Complex coding tasks  | Advanced code generation |
+| **Code Llama 13B**  | Code assistance       | Fast coding help         |
+| **Phind CodeLlama** | Development workflows | Optimized for developers |
+
+### Creative & Specialized
+
+| Model                | Specialty             | Best For                 |
+| -------------------- | --------------------- | ------------------------ |
+| **Nous Hermes 2 Yi** | Enhanced reasoning    | Complex problem solving  |
+| **WizardLM v1.2**    | Instruction following | Detailed task completion |
+| **StripedHyena**     | Long conversations    | Extended context memory  |
+
+::tip
+**New to Together AI?** Start with **Llama 3.1 8B** for general tasks, or **Code Llama 13B** if you're primarily coding. Both are fast and cost-effective!
+::
+
+## Setting Up Together AI in CodinIT
+
+### Step 1: Open Project Settings
+
+In your CodinIT project, click the **Settings** button (⚙️) to open your project configuration.
+
+### Step 2: Choose Together AI as Your Provider
+
+::steps{level="4"}
+#### Find AI Provider Settings
+
+Look for the "AI Provider" or "Model" section in your project settings.
+
+#### Select Together AI
+
+Choose **"Together AI"** from the provider dropdown menu.
+
+#### Enter Your API Key
+
+Paste the API key you got from Together AI into the API key field.
+
+#### Pick Your Model
+
+Select which model you want to use based on your needs (see model recommendations above).
+
+#### Save Your Settings
+
+Click **Save** to apply your changes.
+::
+
+### Step 3: Test Your Connection
+
+::steps{level="4"}
+#### Try a Simple Prompt
+
+In your CodinIT chat, try asking: *"Help me design a simple user profile page"*
+
+#### Check the Response
+
+If everything works, you'll get a helpful response from your chosen model!
+
+#### Try Different Models
+
+Experiment with different models to find your favorite for different types of tasks.
+::
+
+## Understanding Model Differences
+
+### When to Use Each Type
+
+::tabs
+  :::tabs-item{icon="i-lucide-zap" label="For Speed & Cost"}
+  **Best Models: Llama 3.1 8B, Mistral 7B**
+  
+  - Quick responses
+  - Low cost
+  - Great for rapid development
+  - Perfect for simple to medium tasks
+  :::
+
+  :::tabs-item{icon="i-lucide-star" label="For Best Quality"}
+  **Best Models: Llama 3.1 70B, Qwen 2.5 72B**
+  
+  - Superior reasoning
+  - Better at complex tasks
+  - Higher quality responses
+  - Worth the extra cost for important work
+  :::
+
+  :::tabs-item{icon="i-lucide-code" label="For Coding"}
+  **Best Models: Code Llama series**
+  
+  - Specialized for programming
+  - Better code generation
+  - Understands development workflows
+  - Great for debugging and explanations
+  :::
+
+  :::tabs-item{icon="i-lucide-flask" label="For Experiments"}
+  **Try: Specialized Models**
+  
+  - WizardLM for detailed instructions
+  - Nous Hermes for enhanced reasoning
+  - StripedHyena for long conversations
+  - Explore what works best for your use case
+  :::
+::
+
+## Model Selection Guide
+
+### By Project Type
+
+::card-group
+  :::card{icon="i-lucide-smartphone" title="Simple Apps"}
+  **Llama 3.1 8B** or **Mistral 7B** - Fast, affordable, great for basic features
+  :::
+
+  :::card{icon="i-lucide-briefcase" title="Business Apps"}
+  **Llama 3.1 70B** or **Qwen 2.5 72B** - Better reasoning for complex business logic
+  :::
+
+  :::card{icon="i-lucide-code" title="Developer Tools"}
+  **Code Llama 34B** or **Code Llama 13B** - Specialized for coding tasks
+  :::
+
+  :::card{icon="i-lucide-cpu" title="AI-Powered Features"}
+  **Llama 3.1 405B** - Maximum intelligence for sophisticated AI features
+  :::
+::
+
+## Understanding Costs
+
+### What Affects Your Bill
+
+::card-group
+  :::card{icon="i-lucide-message-square" title="Conversation Length"}
+  Longer chats use more tokens and cost more
+  :::
+
+  :::card{icon="i-lucide-brain" title="Model Size"}
+  Larger, smarter models cost more per token
+  :::
+
+  :::card{icon="i-lucide-type" title="Response Length"}
+  Longer AI responses use more output tokens
+  :::
+::
+
+### Smart Cost Management
+
+::tabs
+  :::tabs-item{icon="i-lucide-piggy-bank" label="Save Money"}
+  - Start with smaller models (7B-8B) for most tasks
+  - Use larger models only when you need the extra intelligence
+  - Keep prompts focused and specific
+  - Monitor your usage in the Together AI dashboard
+  :::
+
+  :::tabs-item{icon="i-lucide-target" label="Get Value"}
+  - Match model size to task complexity
+  - Use coding models for code, general models for everything else
+  - Experiment to find the sweet spot for your needs
+  - Remember that better results often justify slightly higher costs
+  :::
+
+  :::tabs-item{icon="i-lucide-bar-chart" label="Track Spending"}
+  - Set up billing alerts in your Together AI account
+  - Review which models you use most
+  - Compare costs vs. results quality
+  - Adjust model choice based on actual usage patterns
+  :::
+::
+
+## Tips for Better Results
+
+### Writing Good Prompts
+
+::field-group
+  :::field{name="Be Model-Aware" type="tip"}
+  Different models have different strengths - coding models are great at code, conversational models excel at explanations
+  :::
+
+  :::field{name="Specify Your Needs" type="tip"}
+  Tell the AI what type of response you want: "write clean, commented code" or "explain in simple terms"
+  :::
+
+  :::field{name="Use Context" type="tip"}
+  Provide background about your project, skill level, and what you're trying to achieve
+  :::
+::
+
+### Getting the Most from Open-Source Models
+
+::card-group
+  :::card{icon="i-lucide-shuffle" title="Try Different Models"}
+  Open-source means choice - experiment with different models to find your favorites
+  :::
+
+  :::card{icon="i-lucide-users" title="Community Knowledge"}
+  These models benefit from community improvements and have lots of tips and tricks available
+  :::
+
+  :::card{icon="i-lucide-wrench" title="Task-Specific Models"}
+  Use specialized models (like Code Llama) for their intended purposes for best results
+  :::
+
+  :::card{icon="i-lucide-trending-up" title="Stay Updated"}
+  New and improved models are released regularly - check for updates in your dashboard
+  :::
+::
+
+## Common Questions
+
+### What makes Together AI different?
+
+::callout{color="blue"}
+Together AI focuses on **open-source models** with **transparent pricing**. Instead of being locked into one company's models, you get access to the best community-built AI with clear, honest costs.
+::
+
+### How do I choose the right model?
+
+Start with **Llama 3.1 8B** for general tasks or **Code Llama 13B** for coding. If you need more intelligence, upgrade to the 70B versions. You can always switch models anytime in your settings.
+
+### Are open-source models as good as proprietary ones?
+
+Many open-source models now rival or exceed proprietary models in specific areas. The latest Llama and Qwen models are excellent, and specialized models like Code Llama often outperform general models for coding tasks.
+
+### Can I use multiple models in one project?
+
+Yes! You can switch between different models in your CodinIT settings anytime. Many users use fast models for quick tasks and powerful models for complex work.
+
+### What if a model isn't working well for my task?
+
+Try a different model! That's the beauty of Together AI - if one model isn't giving you the results you want, switch to another. Different models excel at different types of tasks.
+
+### What if Together AI isn't working?
+
+::card-group
+  :::card{icon="i-lucide-credit-card" title="Check Billing"}
+  Make sure you have payment information set up and available credits
+  :::
+
+  :::card{icon="i-lucide-key" title="Verify API Key"}
+  Ensure you copied your API key correctly from Together AI dashboard
+  :::
+
+  :::card{icon="i-lucide-refresh-cw" title="Try Different Model"}
+  Some models might be temporarily unavailable - try switching to another
+  :::
+::
+
+## Getting Help
+
+Need more assistance?
+
+::card-group
+  :::card
+  ---
+  icon: i-lucide-external-link
+  target: _blank
+  title: Together AI Documentation
+  to: https://docs.together.ai/
+  ---
+  Official guides and API documentation
+  :::
+
+  :::card
+  ---
+  icon: i-lucide-play
+  target: _blank
+  title: Model Playground
+  to: https://api.together.xyz/playground
+  ---
+  Test different models before using them in your projects
+  :::
+
+  :::card
+  ---
+  icon: i-lucide-message-square
+  target: _blank
+  title: Community Discord
+  to: https://discord.gg/together-ai
+  ---
+  Chat with other developers using Together AI
+  :::
+
+  :::card{icon="i-lucide-help-circle" title="CodinIT Support"}
+  Contact our support team for CodinIT-specific help
+  :::
+::
+
+::tip
+🌟 **Ready to explore open-source AI?** With Together AI connected to your CodinIT project, you now have access to dozens of powerful, community-built models with transparent pricing. Start experimenting and find your perfect AI assistant!
+::
+
+
+# Fireworks AI
+
+Configure Fireworks AI with CodinIT to access ultra-fast inference of leading open-source AI models including Llama 3.1, Mixtral, Code Llama, and more. This guide covers account setup, API key generation, and integration for teams prioritizing speed and production performance.
+
+## Overview
+
+::callout{color="primary"}
+**Fireworks AI** is a high-performance inference platform engineered for production workloads, providing blazing-fast access to optimized open-source AI models—including Llama 3.1, Mixtral 8x7B, Code Llama, and Phi-3—with industry-leading response times and reliability.
+
+[Learn more about Fireworks AI](https://fireworks.ai/){rel="nofollow"}
+::
+
+This guide is designed for development teams who prioritize speed, reliability, and production-ready AI inference with optimized model hosting and enterprise-grade performance.
+
+## Step 1: Create Your Fireworks AI Account and Generate API Keys
+
+### 1.1 Sign Up for Fireworks AI
+
+::steps{level="4"}
+#### Visit Fireworks AI
+
+Go to [Fireworks AI Platform](https://fireworks.ai/){rel="nofollow"}
+
+#### Create Your Account
+
+- Click "Get Started" or "Sign Up"
+- Register with your email or GitHub account
+- Complete email verification and profile setup
+- Accept terms of service and usage policies
+::
+
+### 1.2 Navigate to API Key Generation
+
+::steps{level="4"}
+#### Access Your Dashboard
+
+- Log into your Fireworks AI account
+- Navigate to the main dashboard
+- Click on "API Keys" in the left sidebar or settings menu
+
+#### Generate New API Key
+
+- Click "Create API Key" or "New API Key"
+- Provide a descriptive name (e.g., "CodinIT Development", "Production App")
+- Set permissions and usage scopes if available
+- Copy and securely store your generated API key
+::
+
+### 1.3 API Key Security and Best Practices
+
+::card-group
+  :::card{icon="i-lucide-shield" title="Secure Storage"}
+  Store API keys in environment variables or secure credential managers. Never hard-code API keys in source code.
+  :::
+
+  :::card{icon="i-lucide-key" title="Access Control"}
+  Monitor API key usage through the dashboard. Implement key rotation policies and set up usage alerts.
+  :::
+
+  :::card{icon="i-lucide-users" title="Team Management"}
+  Create separate API keys for different team members or projects with descriptive naming conventions.
+  :::
+::
+
+## Step 2: Explore High-Performance Models and Capabilities
+
+### 2.1 Optimized Model Catalog
+
+Fireworks AI specializes in ultra-fast inference of carefully optimized open-source models:
+
+::tabs
+  :::tabs-item{icon="i-lucide-brain" label="Large Language Models"}
+  - **Llama 3.1 405B** - Meta's flagship model with massive capability
+  - **Llama 3.1 70B** - High-performance balanced model
+  - **Llama 3.1 8B** - Lightning-fast responses for most use cases
+  :::
+
+  :::tabs-item{icon="i-lucide-network" label="Mixture of Experts"}
+  - **Mixtral 8x7B** - Efficient sparse model with excellent performance
+  - **Mixtral 8x22B** - Advanced MoE with enhanced capabilities
+  - **Phi-3 Medium** - Microsoft's efficient reasoning model
+  :::
+
+  :::tabs-item{icon="i-lucide-code" label="Code-Specialized"}
+  - **Code Llama 34B** - Advanced code generation and completion
+  - **Code Llama 7B** - Fast coding assistance and debugging
+  - **StarCoder 15B** - Specialized programming model
+  :::
+
+  :::tabs-item{icon="i-lucide-message-circle" label="Conversation & Instruct"}
+  - **Llama 3.1 70B Instruct** - Optimized for chat and dialogue
+  - **Mixtral 8x7B Instruct** - Fast, multilingual conversation
+  - **Yi 34B Chat** - Advanced reasoning in conversations
+  :::
+::
+
+### 2.2 Performance and Speed Advantages
+
+::card-group
+  :::card{icon="i-lucide-zap" title="Ultra-Fast Inference"}
+  Industry-leading response times with optimized model hosting
+  :::
+
+  :::card{icon="i-lucide-shield-check" title="Production-Ready"}
+  Built for high-throughput applications with reliable uptime
+  :::
+
+  :::card{icon="i-lucide-cpu" title="Optimized Infrastructure"}
+  Custom GPU clusters designed for AI inference
+  :::
+
+  :::card{icon="i-lucide-trending-up" title="Scalable Performance"}
+  Auto-scaling to handle traffic spikes and varying loads
+  :::
+::
+
+### 2.3 Model Selection Strategy
+
+::field-group
+  :::field{name="Speed-Critical Applications" type="strategy"}
+  Use 7B-8B models for sub-second responses
+  :::
+
+  :::field{name="Balanced Performance" type="strategy"}
+  70B models for complex tasks with reasonable speed
+  :::
+
+  :::field{name="Maximum Capability" type="strategy"}
+  405B models for the most demanding applications
+  :::
+
+  :::field{name="Code Generation" type="strategy"}
+  Specialized Code Llama models for development workflows
+  :::
+::
+
+## Step 3: Configure the CodinIT VS Code Extension
+
+### 3.1 Install and Open CodinIT
+
+::steps{level="4"}
+#### Download VS Code
+
+Go to [Download Visual Studio Code](https://code.visualstudio.com/){rel="nofollow"}
+
+#### Install the CodinIT Extension
+
+- Open VS Code
+- Navigate to the Extensions Marketplace (Ctrl+Shift+X or Cmd+Shift+X)
+- Search for **CodinIT** and install the extension
+::
+
+### 3.2 Configure CodinIT Settings
+
+::steps{level="4"}
+#### Open CodinIT Settings
+
+Click the settings ⚙️ icon within the CodinIT extension
+
+#### Set API Provider
+
+Choose **Fireworks AI** from the API Provider dropdown
+
+#### Enter Your API Key
+
+Paste the API key you generated in Step 1
+
+#### Select Your Model
+
+Choose from available models (e.g., **Llama 3.1 70B Instruct** for balanced performance)
+
+#### Configure Performance Settings
+
+Adjust temperature, max tokens, and other parameters as needed
+
+#### Save and Test
+
+Save your settings and test with a prompt (e.g., "Create a Python function to sort a dictionary by values.")
+::
+
+## Step 4: Authentication Setup and Configuration
+
+### Option A: Environment Variable (Recommended)
+
+::tabs
+  :::tabs-item{icon="i-lucide-terminal" label="Windows (Command Prompt)"}
+  ```cmd
+  set FIREWORKS_API_KEY=your_api_key_here
+  ```
+  :::
+
+  :::tabs-item{icon="i-lucide-terminal" label="Windows (PowerShell)"}
+  ```powershell
+  $env:FIREWORKS_API_KEY="your_api_key_here"
+  ```
+  :::
+
+  :::tabs-item{icon="i-lucide-terminal" label="macOS/Linux"}
+  ```bash
+  export FIREWORKS_API_KEY=your_api_key_here
+  ```
+  :::
+::
+
+::collapsible{title="Make Environment Variable Persistent"}
+**On Windows:**
+
+```cmd
+setx FIREWORKS_API_KEY "your_api_key_here"
+```
+
+**On macOS/Linux (add to \~/.bashrc, \~/.zshrc, or \~/.bash\_profile):**
+
+```bash
+echo 'export FIREWORKS_API_KEY="your_api_key_here"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+**Restart VS Code** to ensure it picks up the new environment variable
+::
+
+### Option B: Direct Configuration in CodinIT
+
+::steps{level="4"}
+#### Extension Settings
+
+Open the CodinIT extension settings panel in VS Code
+
+#### API Key Input
+
+Enter your Fireworks AI API key directly in the API key field
+
+#### Secure Storage
+
+VS Code stores the API key securely in its encrypted settings storage
+::
+
+### Option C: Project-Based Configuration
+
+::code-group
+  :::code-block{label=".env" language="bash"}
+  ```bash
+  FIREWORKS_API_KEY=your_api_key_here
+  ```
+  :::
+
+  :::code-block{label=".gitignore" language="bash"}
+  ```bash
+  # Environment variables
+  .env
+  .env.local
+  .env.production
+  .env.development
+  ```
+  :::
+
+  :::code-block{label=".env.example" language="bash"}
+  ```bash
+  FIREWORKS_API_KEY=your_fireworks_api_key_here
+  ```
+  :::
+::
+
+## Step 5: Performance Optimization and Speed Maximization
+
+### 5.1 Understanding Response Times and Throughput
+
+::card-group
+  :::card{icon="i-lucide-clock" title="Latency Metrics"}
+  - 7B-8B models: 100-300ms average response time
+  - 70B models: 500-1000ms average response time
+  - Monitor performance in your dashboard
+  :::
+
+  :::card{icon="i-lucide-activity" title="Throughput Optimization"}
+  - Implement request batching
+  - Use streaming responses
+  - Configure appropriate timeouts
+  :::
+::
+
+### 5.2 Model-Specific Performance Tuning
+
+::field-group
+  :::field{name="Temperature" type="parameter"}
+  Lower values (0.1-0.3) for consistent outputs, higher (0.7-1.0) for creativity
+  :::
+
+  :::field{name="Max Tokens" type="parameter"}
+  Set appropriate limits to control response length and cost
+  :::
+
+  :::field{name="Top-p and Top-k" type="parameter"}
+  Fine-tune for quality vs. speed trade-offs
+  :::
+::
+
+**Prompt Engineering for Speed:**
+
+- Write clear, concise prompts to reduce processing time
+- Use system prompts effectively to provide context without repetition
+- Implement prompt templates for consistent performance
+
+### 5.3 Caching and Request Optimization
+
+::card-group
+  :::card{icon="i-lucide-database" title="Response Caching"}
+  Implement local caching for repeated queries and semantic caching for similar prompts
+  :::
+
+  :::card{icon="i-lucide-shuffle" title="Request Patterns"}
+  Batch similar requests, implement exponential backoff, and use async/await patterns
+  :::
+::
+
+## Step 6: Cost Management and Usage Monitoring
+
+### 6.1 Understanding Fireworks AI Pricing
+
+::card-group
+  :::card{icon="i-lucide-dollar-sign" title="Token-Based Pricing"}
+  Pay per input and output token with transparent pricing. Different models have varying costs.
+  :::
+
+  :::card{icon="i-lucide-trending-down" title="Cost Optimization"}
+  Use smaller models for simple tasks and implement prompt caching to reduce costs.
+  :::
+::
+
+### 6.2 Usage Monitoring and Analytics
+
+::field-group
+  :::field{name="Dashboard Monitoring" type="feature"}
+  Track API calls, token usage, costs, response times, and error rates in real-time
+  :::
+
+  :::field{name="Budget Management" type="feature"}
+  Set monthly spending limits, track cost per component, and implement usage quotas
+  :::
+::
+
+### 6.3 Rate Limits and Scaling
+
+::callout{color="warning"}
+**Understanding Limits**: Monitor current rate limits in your Fireworks AI dashboard. Understand both requests per minute and tokens per minute limits.
+::
+
+**Scaling Strategies:**
+
+- Implement queue systems for high-volume applications
+- Use load balancing across multiple API keys if needed
+- Consider dedicated endpoints for enterprise workloads
+
+## Step 7: Production Deployment and Enterprise Features
+
+### 7.1 Production Readiness
+
+::card-group
+  :::card{icon="i-lucide-shield" title="Reliability Features"}
+  Built-in redundancy, failover capabilities, and industry-leading uptime SLAs
+  :::
+
+  :::card{icon="i-lucide-lock" title="Security & Compliance"}
+  Enterprise-grade security with SOC 2, GDPR compliance, and HTTPS encryption
+  :::
+::
+
+### 7.2 Advanced Integration Patterns
+
+::field-group
+  :::field{name="Error Handling" type="pattern"}
+  Implement comprehensive error handling, circuit breaker patterns, and monitoring
+  :::
+
+  :::field{name="Performance Monitoring" type="pattern"}
+  Integrate with APM tools, track user-facing metrics, and implement A/B testing
+  :::
+::
+
+### 7.3 Team and Organization Management
+
+::card-group
+  :::card{icon="i-lucide-users" title="Multi-User Setup"}
+  Invite team members, set role-based permissions, and implement centralized billing
+  :::
+
+  :::card{icon="i-lucide-building" title="Enterprise Features"}
+  Custom model deployments, dedicated infrastructure, and priority support
+  :::
+::
+
+## Step 8: Advanced Use Cases and Integration Scenarios
+
+### 8.1 Real-Time Applications
+
+::card-group
+  :::card{icon="i-lucide-radio" title="Streaming Responses"}
+  Implement server-sent events, WebSocket connections, and progressive updates
+  :::
+
+  :::card{icon="i-lucide-zap" title="Interactive Applications"}
+  Build chatbots, real-time code completion, and interactive content generation
+  :::
+::
+
+### 8.2 High-Volume Production Systems
+
+::card-group
+  :::card{icon="i-lucide-layers" title="Batch Processing"}
+  Process large datasets efficiently with parallel processing and async patterns
+  :::
+
+  :::card{icon="i-lucide-plug" title="System Integration"}
+  Connect with databases, implement middleware, and use message queues
+  :::
+::
+
+## Summary
+
+By following this guide, your development team can successfully integrate Fireworks AI with CodinIT to leverage ultra-fast AI inference:
+
+::card-group
+  :::card{icon="i-lucide-user-check" title="Account Setup"}
+  Create your account, generate secure API keys, and implement proper access controls
+  :::
+
+  :::card{icon="i-lucide-gauge" title="Performance Selection"}
+  Choose from optimized models based on your speed and capability requirements
+  :::
+
+  :::card{icon="i-lucide-settings" title="Configuration"}
+  Set up the extension with optimal settings for maximum performance
+  :::
+
+  :::card{icon="i-lucide-trending-up" title="Optimization"}
+  Monitor usage, optimize for speed, and manage costs through comprehensive analytics
+  :::
+::
+
+## Additional Resources
+
+::card-group
+  :::card
+  ---
+  icon: i-lucide-book-open
+  target: _blank
+  title: Documentation
+  to: https://docs.fireworks.ai/
+  ---
+  Fireworks AI comprehensive documentation
+  :::
+
+  :::card
+  ---
+  icon: i-lucide-code
+  target: _blank
+  title: API Reference
+  to: https://docs.fireworks.ai/api-reference
+  ---
+  Detailed endpoint documentation
+  :::
+
+  :::card
+  ---
+  icon: i-lucide-play
+  target: _blank
+  title: Model Playground
+  to: https://fireworks.ai/models
+  ---
+  Interactive model testing environment
+  :::
+
+  :::card
+  ---
+  icon: i-lucide-message-square
+  target: _blank
+  title: Community Discord
+  to: https://discord.gg/fireworks-ai
+  ---
+  Developer discussions and support
+  :::
+::
+
+::tip
+Start building with Fireworks AI and experience the fastest AI inference available! This guide reflects current capabilities and pricing - visit the official documentation for the most up-to-date information.
+::
