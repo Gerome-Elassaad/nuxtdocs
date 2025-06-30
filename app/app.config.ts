@@ -77,7 +77,7 @@ export default defineAppConfig({
   header: {
     logo: {
       light: '/landing/light/logo.png',
-      dark: '/landing/dark/logo-dark.png',
+      dark: '/landing/dark/logo-dark.pn',
       alt: 'Logo-Codinit'
     },
 
