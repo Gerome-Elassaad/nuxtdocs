@@ -7,6 +7,10 @@ definePageMeta({
 })
 
 const route = useRoute()
+
+if (route.path.includes('sql_dump')) {
+  throw createError({ statusCode: 403, statusMessage: 'Forbidden' })
+}
 const { toc } = useAppConfig()
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 

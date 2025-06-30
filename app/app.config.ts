@@ -14,7 +14,7 @@ export default defineAppConfig({
     }
   },
   seo: {
-    siteName: 'CodinIT.dev'
+    siteName: 'Docs'
   },
   header: {
     title: '',

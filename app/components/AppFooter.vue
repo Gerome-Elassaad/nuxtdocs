@@ -3,7 +3,7 @@ const { footer } = useAppConfig()
 </script>
 
 <template>
-  <UFooter>
+  <UFooter aria-label="App Footer">
     <template #left>
       {{ footer.credits }}
     </template>

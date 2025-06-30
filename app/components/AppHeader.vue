@@ -10,6 +10,7 @@ const { header } = useAppConfig()
   <UHeader
     :ui="{ center: 'flex-1' }"
     :to="header?.to || '/'"
+    aria-label="App Header"
   >
     <UContentSearchButton
       v-if="header?.search"
@@ -38,8 +39,11 @@ const { header } = useAppConfig()
       v-else
       #left
     >
-      <NuxtLink :to="header?.to || '/'">
-        <LogoPro class="w-auto h-45 shrink-0" />
+      <NuxtLink
+        :to="header?.to || '/'"
+        aria-label="Homepage"
+      >
+        <LogoPro class="h-10" />
       </NuxtLink>
 
       <TemplateMenu />

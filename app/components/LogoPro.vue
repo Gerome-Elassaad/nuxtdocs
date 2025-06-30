@@ -1,25 +1,19 @@
-<template>
-  <NuxtImg
-    :key="mounted ? $colorMode.value : 'initial'"
-    :src="logoSrcToRender"
-    alt="Logo"
-  />
-</template>
+<script setup lang="ts">
+const colorMode = useColorMode()
 
-<script setup>
-import { ref, computed, onMounted } from 'vue'
-
-const { $colorMode } = useNuxtApp()
-const mounted = ref(false)
-
-onMounted(() => {
-  mounted.value = true
-})
-
-const logoSrcToRender = computed(() => {
-  if (!mounted.value) {
-    return '/logo.png'
+const logo = computed(() => {
+  if (colorMode.value === 'dark') {
+    return '/landing/light/logo.png'
   }
-  return $colorMode.value === 'dark' ? '/logo.png' : '/logo-dark.png'
+  return '/landing/dark/logo-dark.png'
 })
 </script>
+
+<template>
+  <ClientOnly>
+    <NuxtImg
+      :src="logo"
+      alt="Logo"
+    />
+  </ClientOnly>
+</template>

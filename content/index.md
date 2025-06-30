@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Docs - CodinIT.dev
+  title: CodinIT.dev - Docs
   description: Learn how to build, deploy, and edit full-stack applications with CodinIT.dev. Open-source AI app builder powered by e2b.dev sandboxes.
 ---
 
@@ -14,7 +14,7 @@ orientation: horizontal
   filename: Terminal
   ---
   ```bash
-  Deploy
+  git clone https://github.com/Gerome-Elassaad/CodingIT.git
   ```
   :::
 
