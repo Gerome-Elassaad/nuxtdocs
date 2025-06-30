@@ -86,5 +86,10 @@ export default defineAppConfig({
 
   github: {
     url: 'https://github.com/Gerome-Elassaad/docs'
+  },
+
+  seo: {
+    title: 'Docs',
+    description: 'Learn how to build, deploy, and edit full-stack applications with CodinIT.dev. Open-source AI app builder powered by e2b.dev sandboxes.'
   }
 })
