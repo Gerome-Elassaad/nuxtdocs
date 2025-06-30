@@ -1,7 +1,9 @@
 ---
 seo:
   title: Docs
-  description: Create full-stack web applications using natural language. No coding expertise required. Deploy instantly with custom domains using CodinIT.dev.
+  description: Create full-stack web applications using natural language. No
+    coding expertise required. Deploy instantly with custom domains using
+    CodinIT.dev.
 ---
 
 ::u-page-hero
@@ -36,12 +38,7 @@ Turn your ideas into deployed applications from one browser tab.
   :::
 
 #headline
-  :::u-button
-  ---
-  size: sm
-  to: https://codinit.dev
-  variant: outline
-  ---
+  :::u-button{size="sm" to="https://codinit.dev" variant="outline"}
   Try CodinIT.dev Free Today →
   :::
 ::
@@ -123,7 +120,7 @@ Turn your ideas into deployed applications from one browser tab.
         icon: i-lucide-code
         label: Prompt
         ---
-        ```text
+        ```text [prompt.txt]
         Create a dashboard app with user authentication, 
         monthly sales chart, and customer management. 
         Include a dark mode toggle and mobile responsive design.
