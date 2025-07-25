@@ -5,10 +5,19 @@
   "lockFileMaintenance": {
     "enabled": true
   },
-  "baseBranches": ["v1", "main"],
-  "packageRules": [{
-    "matchDepTypes": ["resolutions"],
-    "enabled": false
-  }],
-  "postUpdateOptions": ["pnpmDedupe"]
+  "baseBranchPatterns": [
+    "v1",
+    "main"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "resolutions"
+      ],
+      "enabled": false
+    }
+  ],
+  "postUpdateOptions": [
+    "pnpmDedupe"
+  ]
 }
