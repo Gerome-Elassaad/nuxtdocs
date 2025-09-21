@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   // Site
   site: {
     url: 'https://docs.codinit.dev',
-    name: 'Codinit.dev Documentation',
+    name: 'Docs',
     description: 'The complete documentation for CodinIT, covering all features and functionalities.',
     defaultLocale: 'en'
   },
