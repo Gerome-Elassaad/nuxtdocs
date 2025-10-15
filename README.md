@@ -1,9 +1,7 @@
-# CodinIT.dev Documentation
+# CodinIT.dev Docs      [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/codinit-dev/docs) | [![Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/codinit-dev/docs)
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/codinit-dev/codinit-docs)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/codinit-dev/codinit-docs)
 
-Official documentation for [CodinIT.dev](https://codinit.dev) - the open-source AI-powered app builder platform.
+### Official documentation for [CodinIT.dev](https://codinit.dev) - the open-source AI-powered app builder platform.
 
 ## 🚀 About CodinIT.dev
 
@@ -42,7 +40,7 @@ content/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Gerome-Elassaad/docs.git
-   cd codinit-docs
+   cd docs
    ```
 
 2. **Install dependencies**
@@ -220,7 +218,6 @@ NUXT_PLAUSIBLE_DOMAIN=docs.codinit.dev
 
 - 📖 [Documentation](https://docs.codinit.dev)
 - 🐛 [GitHub Issues](https://github.com/Gerome-Elassaad/docs/issues)
-- 🐦 [Twitter](https://x.com/codinit_dev)
 
 ### Contributing to CodinIT.dev
 
@@ -228,16 +225,14 @@ Interested in contributing to the main platform?
 
 - 🌟 [CodinIT.dev Repository](https://github.com/Gerome-Elassaad/codingit)
 - 🏗️ [e2b.dev Sandboxes](https://e2b.dev)
-- 📋 [Feature Requests](https://github.com/codinit-dev/codinit/discussions)
+- 📋 [Feature Requests](https://github.com/codinit-dev/codingit/discussions)
 
 ## 📄 License
 
 This documentation is licensed under the [MIT License](LICENSE).
 
-The CodinIT.dev platform is open-source and available under the [MIT License](https://github.com/codinit-dev/codinit/blob/main/LICENSE).
-
 ---
 
 **Built with ❤️ by the CodinIT.dev team**
 
-Powered by [e2b.dev](https://e2b.dev) sandboxes for secure AI code execution.
+Sponsored by [e2b.dev](https://e2b.dev) sandboxes for secure AI code execution.
