@@ -13,7 +13,7 @@ jobs:
       
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Bump version and push tag
         id: tag_version
